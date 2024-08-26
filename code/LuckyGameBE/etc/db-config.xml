@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+
+    <bean id="dataSourceService" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName"    			value="${jdbc.lucky.driver}" />
+        <property name="url"                			value="${jdbc.lucky.url}" /> 
+        <property name="username"           			value="${jdbc.lucky.username.enc}" />
+        <property name="password"           			value="${jdbc.lucky.password.enc}" />
+        <property name="maxActive"          			value="10"/>
+        <property name="validationQuery"    			value="${jdbc.lucky.validationquery}"/>
+        <property name="testWhileIdle"      			value="true"/>
+        <property name="minEvictableIdleTimeMillis"    	value="120000"/>
+        <property name="timeBetweenEvictionRunsMillis" 	value="180000"/>
+        <property name="numTestsPerEvictionRun"      	value="4"/>
+    </bean>
+
+      <bean id="dataSourceBccsPre" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName"    			value="${jdbc.bccs_pre.driver}" />
+        <property name="url"                			value="${jdbc.bccs_pre.url}" /> 
+        <property name="username"           			value="${jdbc.bccs_pre.username.enc}" />
+        <property name="password"           			value="${jdbc.bccs_pre.password.enc}" />
+        <property name="maxActive"          			value="${jdbc.bccs_pre.pool.size}"/>
+        <property name="validationQuery"    			value="${jdbc.bccs_pre.validationquery}"/>
+        <property name="testWhileIdle"      			value="${jdbc.bccs_pre.testwhileidle}"/>
+        <property name="minEvictableIdleTimeMillis"    	value="120000"/>
+        <property name="timeBetweenEvictionRunsMillis" 	value="180000"/>
+        <property name="numTestsPerEvictionRun"      	value="4"/>
+    </bean>   	
+    
+    <bean id="dataSourceBccsPos" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName"    			value="${jdbc.bccs_pos.driver}" />
+        <property name="url"                			value="${jdbc.bccs_pos.url}" /> 
+        <property name="username"           			value="${jdbc.bccs_pos.username.enc}" />
+        <property name="password"           			value="${jdbc.bccs_pos.password.enc}" />
+        <property name="maxActive"          			value="${jdbc.bccs_pos.pool.size}"/>
+        <property name="validationQuery"    			value="${jdbc.bccs_pos.validationquery}"/>
+        <property name="testWhileIdle"      			value="${jdbc.bccs_pos.testwhileidle}"/>
+        <property name="minEvictableIdleTimeMillis"    	value="120000"/>
+        <property name="timeBetweenEvictionRunsMillis" 	value="180000"/>
+        <property name="numTestsPerEvictionRun"      	value="4"/>
+    </bean>   	
+	
+ 
+    <bean id="LuckyGameDAO" class="com.viettel.luckydraw.dao.LuckyGameDAO">
+        <property name="dataSource" ref="dataSourceService"/>      
+    </bean> 
+    
+
+       <!-- 
+      <bean id="WebServiceUtil" class="com.mvt.mwin.util.WebServiceUtil">
+        <property name="dataSource" ref="dataSourceService"/>      
+    </bean>
+         
+    <bean id="WebServiceUtil" class="com.viettel.luckydraw.util.WebServiceUtil">
+     <property name="dataSource" ref="dataSourceService"/>     
+       
+    </bean>
+  	-->
+    <bean id="BccsPreDAO" class="com.viettel.luckydraw.dao.BccsPreDAO">
+        <property name="dataSource" ref="dataSourceBccsPre"/>      
+    </bean>
+    
+    <bean id="BccsPosDAO" class="com.viettel.luckydraw.dao.BccsPosDAO">
+        <property name="dataSource" ref="dataSourceBccsPos"/>      
+    </bean>
+   <!-- 
+   <bean id="CallBccsWs" class="com.viettel.luckydraw.ws.CallBccsWs">
+        <property name="timeOut" ref="bccs.timeout"/>
+		<property name="socketTimeOut" ref="bccs.socket.timeout"/>
+		<property name="retryTimes" ref="bccs.retry.times"/>
+		<property name="retrySleep" ref="bccs.retry.sleep"/>
+		<property name="urlWs" ref="bccs.wsdl"/>
+		<property name="getAccountInfoTemplate" ref="bccs.template.getInfoAccount"/>
+		<property name="addBalanceTemplate" ref="bccs.template.addBalanceAccount"/>
+		<property name="encUser" ref="bccs.user"/>
+		<property name="encPass" ref="bccs.pass"/>
+    </bean> 
+    	-->
+    <!--  <bean id="ConfigConnectDao" class="com.viettel.vmoney.merchant.cfgconnect.ConfigConnectDao">
+        <property name="dataSource" ref="dataSourceService"/>
+    </bean>  -->
+   
+	
+</beans>

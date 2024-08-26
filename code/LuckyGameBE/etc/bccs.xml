@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xmlns:int="http://www.springframework.org/schema/integration"
+       xmlns:int-jdbc="http://www.springframework.org/schema/integration/jdbc"
+       xmlns:int-amqp="http://www.springframework.org/schema/integration/amqp"
+       xmlns:int-stream="http://www.springframework.org/schema/integration/stream"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+                http://www.springframework.org/schema/rabbit http://www.springframework.org/schema/rabbit/spring-rabbit-1.0.xsd
+		http://www.springframework.org/schema/integration http://www.springframework.org/schema/integration/spring-integration-2.1.xsd
+		http://www.springframework.org/schema/integration/jdbc http://www.springframework.org/schema/integration/jdbc/spring-integration-jdbc.xsd
+                http://www.springframework.org/schema/integration/amqp http://www.springframework.org/schema/integration/amqp/spring-integration-amqp.xsd
+                http://www.springframework.org/schema/integration/stream http://www.springframework.org/schema/integration/stream/spring-integration-stream.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+    
+    <bean id="CallBccsWs" class="com.viettel.luckydraw.ws.CallBccsWs">
+	<constructor-arg value="${bccs.timeout}"/>
+	<constructor-arg value="${bccs.socket.timeout}"/>
+	<constructor-arg value="${bccs.retry.times}"/>
+	<constructor-arg value="${bccs.retry.sleep}"/>
+	<constructor-arg value="${bccs.wsdl}"/>
+	<constructor-arg value="${bccs.template.getInfoAccount}"/>
+	<constructor-arg value="${bccs.template.addBalanceAccount}"/>
+	<constructor-arg value="${bccs.user}"/>
+	<constructor-arg value="${bccs.pass}"/>       
+    </bean>    
+</beans>    

@@ -1,0 +1,11 @@
+19/03/2022 23:30:58 ERROR [TaskExcutor-0_1647707402266] CallWS: java.net.SocketTimeoutException: Read timed out
+19/03/2022 23:30:58 ERROR [TaskExcutor-0_1647707402266] TaskExcutor: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file. erorr pay emola for 258872032111
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:257)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121)
+	at com.nh.excutor.TaskExcutor.callEMola(TaskExcutor.java:482)
+	at com.nh.excutor.TaskExcutor.processEmola(TaskExcutor.java:281)
+	at com.nh.excutor.TaskExcutor.process(TaskExcutor.java:122)
+	at com.nh.excutor.TaskExcutor.run(TaskExcutor.java:95)
+	at java.lang.Thread.run(Thread.java:745)

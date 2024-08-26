@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<filter-security>
+    
+    <global>
+        <threadPoolSize value ="20"/> <!--Bang so core cua CPU -->
+        <filterState value = "active"/> <!-- co 2 gia tri: active, deactive -->
+        <multipartReqState value = "active"/> <!-- co 2 gia tri: active, deactive -->
+        <threshold-score value= "10" />
+    </global>   
+    <aborted-params>
+        <param-name name ="vt"/>
+        <param-name name ="dojo.preventCache"/>
+    </aborted-params>
+    <error-types>
+        <error-type id="1" name="SQL Injection" />
+        <error-type id="2" name="XSS" />
+    </error-types>
+    
+    <rules>
+        <rule id="1" type="1" score="15">
+            <syntax><![CDATA[redirect:|action:|redirectaction:|servletactioncontext|_memberaccess|denymethodexecution|traceevaluations|keeplastevaluation|xwork\.methodaccessor\.denymethodexecution|typeresolver|classresolver|lastevaluation|allowstaticmethodaccess|getruntime|java\.lang\.]]></syntax>
+        </rule>
+        <rule id="2" type="2" score="15">
+            <syntax><![CDATA[^\$\{.*$|^%\{.*$]]></syntax>
+        </rule>
+    </rules>    
+    
+    <rule-groups>
+<!--        <rule-group id="1" name="Rule group 1">
+            <item rule="1" />
+            <item rule="6" />   
+     </rule-group>-->
+        
+    </rule-groups>
+    
+    <white-list>
+<!--        <request uri="Demo_FW3.4_Security/gridTest1!postTotalData.do">
+            <param name="gridData[0].name" rule-group="1" />
+            <param name="gridData[0].desc" rule-group="2" />
+            <param name="*" rule-group="5" />
+        </request>
+        
+       
+        <request uri="Demo_FW3.4_Security/testOGNL!onSubmit.do">
+            <param name="*" rule-group="4" /> 
+        </request>   
+        
+        <request uri="Demo_FW3.4_Security/uploadiframe!executeUploadIframe.do">
+            <param name="form1.textarea1" rule-group="2" /> 
+            <param name="dtep" rule-group="1" /> 
+            <param name="*" rule-group="5" />
+        </request>-->
+    </white-list>
+    
+</filter-security>
+

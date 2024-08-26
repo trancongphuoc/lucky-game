@@ -1,0 +1,12 @@
+{
+"userName":"2099794518",
+"password":"12345aA@",
+"custIsdn":"#MSISDN",
+"invoiceAmount": 0,
+"upointRedeem": 0,
+"upointGivenCustomer":#AMOUNT,
+"applicationName":"iLucky",
+"ip":"localhost",
+"description":"Add Upoint",
+"reqId":"#TRANS_ID"
+}

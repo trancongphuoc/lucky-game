@@ -1,0 +1,52 @@
+/* 
+    Document   : layout
+    Created on : Jan 12, 2010, 4:01:01 PM
+    Author     : NhatNT
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+.no-space {
+    margin: 0px;
+    padding:0px;
+}
+.float-right {
+    float:right;
+}
+.cursor-pointer {
+    cursor:pointer;
+}
+
+.lang {
+    width:16px;
+    height:11px;
+
+    margin-top:7px;
+    margin-right:4px;
+}
+#vt-projectBar {
+   /* background: url( ../images/layout/white-top-bottom.gif ) repeat-x top;*/
+  /*  border-bottom:1px solid #99bbe8;*/
+    height:25px;
+}
+
+#vt-projectName {
+    margin-top:5px;
+    margin-left:10px;
+    font-size:12px;
+}
+
+#vt-lang-vn {
+    background:url( ../images/languages/vn.png ) no-repeat 0% 0%;
+}
+
+#vt-lang-en {
+    margin-right:10px;
+    background:url( ../images/languages/en.png ) no-repeat 0% 0%;
+}
+
+

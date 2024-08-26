@@ -1,0 +1,302 @@
+[INFO] 2020-12-14 18:32:02,139 com.nh.Start main - ======================================================================
+Developed by: hadc
+======================================================================
+
+[INFO] 2020-12-14 18:32:02,143 com.nh.Start main - log home config: etc/config.properties
+[INFO] 2020-12-14 18:32:02,143 com.nh.Start main - log CONFIG_FILE: etc/config.properties
+[INFO] 2020-12-14 18:32:02,212 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2020-12-14 18:32:02,923 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2020-12-14 18:32:03,038 com.nh.database.DirectConnection init - DBThread Oracel-0Connecting to 'VAS_SUPERGOLO_2020'
+[INFO] 2020-12-14 18:32:07,070 com.nh.database.DirectConnection connectToOraServer - DBThread Oracel-0CONNECTED.
+[INFO] 2020-12-14 18:32:07,071 com.nh.database.DirectConnection init - DBThread Oracel-0CONNECTED.
+[INFO] 2020-12-14 18:32:07,084 com.nh.excutor.TaskManagement loadCommand - add command: * 18 * * * PR_SMS_NOTIFY
+[INFO] 2020-12-14 18:32:07,091 com.nh.excutor.TaskQueue getInstance - length of excutor: 1
+[INFO] 2020-12-14 18:32:07,106 com.nh.excutor.TaskQueue enqueue - enqueue queue(1): PR_SMS_NOTIFY
+[INFO] 2020-12-14 18:32:23,684 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2uagocaeqx4eov36qx72|12451fee, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 2uagocaeqx4eov36qx72|12451fee, idleConnectionTestPeriod -> 30, initialPoolSize -> 2, jdbcUrl -> jdbc:oracle:thin:@localhost:2173/marketdg, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 45, maxPoolSize -> 5, maxStatements -> 1500, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> select 1 from dual, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 1, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO] 2020-12-14 18:32:45,643 com.nh.excutor.TaskExcutor process - Winner update processed: Winner=13-DEC-20-872032111
+[INFO] 2020-12-14 18:35:34,529 com.nh.Start main - ======================================================================
+Developed by: hadc
+======================================================================
+
+[INFO] 2020-12-14 18:35:34,531 com.nh.Start main - log home config: etc/config.properties
+[INFO] 2020-12-14 18:35:34,532 com.nh.Start main - log CONFIG_FILE: etc/config.properties
+[INFO] 2020-12-14 18:35:34,589 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2020-12-14 18:35:35,294 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2020-12-14 18:35:35,377 com.nh.database.DirectConnection init - DBThread Oracel-0Connecting to 'VAS_SUPERGOLO_2020'
+[INFO] 2020-12-14 18:35:39,731 com.nh.database.DirectConnection connectToOraServer - DBThread Oracel-0CONNECTED.
+[INFO] 2020-12-14 18:35:39,732 com.nh.database.DirectConnection init - DBThread Oracel-0CONNECTED.
+[INFO] 2020-12-14 18:35:39,745 com.nh.excutor.TaskManagement loadCommand - add command: * 18 * * * PR_SMS_NOTIFY
+[INFO] 2020-12-14 18:35:39,751 com.nh.excutor.TaskQueue getInstance - length of excutor: 1
+[INFO] 2020-12-14 18:35:39,768 com.nh.excutor.TaskQueue enqueue - enqueue queue(1): PR_SMS_NOTIFY
+[INFO] 2020-12-14 18:35:58,235 com.nh.Start main - ======================================================================
+Developed by: ken
+======================================================================
+
+[INFO] 2020-12-14 18:35:58,238 com.nh.Start main - log home config: etc/config.properties
+[INFO] 2020-12-14 18:35:58,238 com.nh.Start main - log CONFIG_FILE: etc/config.properties
+[INFO] 2020-12-14 18:35:58,294 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2020-12-14 18:35:58,996 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2020-12-14 18:35:59,076 com.nh.database.DirectConnection init - DBThread Oracel-0Connecting to 'VAS_SUPERGOLO_2020'
+[INFO] 2020-12-14 18:36:03,129 com.nh.database.DirectConnection connectToOraServer - DBThread Oracel-0CONNECTED.
+[INFO] 2020-12-14 18:36:03,131 com.nh.database.DirectConnection init - DBThread Oracel-0CONNECTED.
+[INFO] 2020-12-14 18:36:03,144 com.nh.excutor.TaskManagement loadCommand - add command: * 18 * * * PR_SMS_NOTIFY
+[INFO] 2020-12-14 18:36:03,153 com.nh.excutor.TaskQueue getInstance - length of excutor: 1
+[INFO] 2020-12-14 18:36:03,170 com.nh.excutor.TaskQueue enqueue - enqueue queue(1): PR_SMS_NOTIFY
+[INFO] 2020-12-14 18:36:04,648 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2uagocaeqx9guj1gb1lc9|7164d2b3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 2uagocaeqx9guj1gb1lc9|7164d2b3, idleConnectionTestPeriod -> 30, initialPoolSize -> 2, jdbcUrl -> jdbc:oracle:thin:@localhost:2173/marketdg, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 45, maxPoolSize -> 5, maxStatements -> 1500, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> select 1 from dual, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 1, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO] 2020-12-14 18:36:21,152 com.nh.excutor.TaskExcutor process - Winner update processed: Winner=13-DEC-20-872032111
+[INFO] 2020-12-14 18:37:02,376 com.nh.util.EncryptUtil makeMpsRequestUrl - ======> check key at folder :nullSUPERGOLO_OTHER_WIN/
+[ERROR] 2020-12-14 18:37:02,378 com.nh.util.EncryptUtil getKeyFile - getKeyFile
+java.io.FileNotFoundException: nullSUPERGOLO_OTHER_WIN\PublicKeyVT.pem (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at com.nh.util.EncryptUtil.getKeyFile(EncryptUtil.java:223)
+	at com.nh.util.EncryptUtil.makeMpsRequestUrl(EncryptUtil.java:380)
+	at com.nh.util.EncryptUtil.sendRequestToMps(EncryptUtil.java:358)
+	at com.nh.excutor.TaskExcutor.process(TaskExcutor.java:136)
+	at com.nh.excutor.TaskExcutor.run(TaskExcutor.java:87)
+	at java.lang.Thread.run(Thread.java:745)
+[ERROR] 2020-12-14 18:37:02,383 com.nh.util.EncryptUtil getKeyFile - getKeyFile
+java.io.FileNotFoundException: nullSUPERGOLO_OTHER_WIN\PrivateKeyCP.pem (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at com.nh.util.EncryptUtil.getKeyFile(EncryptUtil.java:223)
+	at com.nh.util.EncryptUtil.makeMpsRequestUrl(EncryptUtil.java:381)
+	at com.nh.util.EncryptUtil.sendRequestToMps(EncryptUtil.java:358)
+	at com.nh.excutor.TaskExcutor.process(TaskExcutor.java:136)
+	at com.nh.excutor.TaskExcutor.run(TaskExcutor.java:87)
+	at java.lang.Thread.run(Thread.java:745)
+[ERROR] 2020-12-14 18:37:02,389 com.nh.util.EncryptUtil getKeyFile - getKeyFile
+java.io.FileNotFoundException: nullSUPERGOLO_OTHER_WIN\PublicKeyCP.pem (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at com.nh.util.EncryptUtil.getKeyFile(EncryptUtil.java:223)
+	at com.nh.util.EncryptUtil.makeMpsRequestUrl(EncryptUtil.java:382)
+	at com.nh.util.EncryptUtil.sendRequestToMps(EncryptUtil.java:358)
+	at com.nh.excutor.TaskExcutor.process(TaskExcutor.java:136)
+	at com.nh.excutor.TaskExcutor.run(TaskExcutor.java:87)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO] 2020-12-14 18:37:02,760 com.nh.util.EncryptUtil makeMpsRequestUrl - ==============>>>>> BUILD DATA TO SEND TO MPS<<===============
+[INFO] 2020-12-14 18:37:02,761 com.nh.util.EncryptUtil makeMpsRequestUrl - step 1: data input  -------->SUB=SUPERGOLO_OTHER_WIN&REQ=ca7e74b7-ca85-4010-a9d7-6d956246150d&SESS=99820201214183634175&SUB_CP=&CONT=SUPERGOLO_OTHER_WIN|MODBALANCEN&PRICE=5000&MOBILE=872032111&ITEM=SUPERGOLO_OTHER_WIN&SOURCE=CLIENT&TYPE=MOBILE&IMEI=NULL&CATE=WIN50&RANK=84&POINT=301&CODE=829723
+[INFO] 2020-12-14 18:37:02,785 com.nh.util.EncryptUtil makeMpsRequestUrl - step 2: decode AES for input ------->value=3wG4PRHABNhROx+/P80ZVw326JRc0S7Ra5Cq7W4zUhXEVipfuUJBqCa1pZMHRTreESkDsPaY/ZgO0Dm00pxxDr/Pm0EsrvYbpNGRjUq7HhMtCd4tCutRTjJM+OAQUmOSlKr04fWywPXmyj7aJqVM/YC7ZFP5qyw3c7ciGvRors9dO5bs3KUxC2htfkQ02YeSizNC1x8nOnvkqGiKlP9/SSKumWEOBiGX9PVEWN286ABBwrLmSIke34R9yUBrWPn5sDojeUfUBvrRaXf+HLnnoDIi+DR+fYn1vPVykEqHxqbWBC4OaJrS21fFnW6KkeNSZNj1fcWf/qlvcm+SwZx/++B9rQ6dRTcSMN3pHFMtYbs=&key=152b74198c18f4f1128ca797e213f769
+[INFO] 2020-12-14 18:37:02,826 com.nh.util.EncryptUtil getBCPublicKeyFromString - Exception : java.security.spec.InvalidKeySpecException: java.security.InvalidKeyException: Key must not be null
+[INFO] 2020-12-14 18:37:02,827 com.nh.util.EncryptUtil encryptRSA - RSAPublicKey == null
+[INFO] 2020-12-14 18:37:02,828 com.nh.util.EncryptUtil makeMpsRequestUrl - step 3: input add RSA for input --->null
+[INFO] 2020-12-14 18:37:02,829 com.nh.util.EncryptUtil getPrivateKeyFromString - error getPrivateKeyFromString java.lang.NullPointerException
+[ERROR] 2020-12-14 18:37:02,832 com.nh.util.EncryptUtil createMsgSignature - createMsgSignature
+java.security.InvalidKeyException: Key must not be null
+	at sun.security.rsa.RSAKeyFactory.engineTranslateKey(RSAKeyFactory.java:182)
+	at sun.security.rsa.RSAKeyFactory.toRSAKey(RSAKeyFactory.java:111)
+	at sun.security.rsa.RSASignature.engineInitSign(RSASignature.java:107)
+	at sun.security.rsa.RSASignature.engineInitSign(RSASignature.java:101)
+	at java.security.Signature$Delegate.init(Signature.java:1125)
+	at java.security.Signature$Delegate.chooseProvider(Signature.java:1085)
+	at java.security.Signature$Delegate.engineInitSign(Signature.java:1149)
+	at java.security.Signature.initSign(Signature.java:511)
+	at com.nh.util.EncryptUtil.createMsgSignature(EncryptUtil.java:168)
+	at com.nh.util.EncryptUtil.makeMpsRequestUrl(EncryptUtil.java:419)
+	at com.nh.util.EncryptUtil.sendRequestToMps(EncryptUtil.java:358)
+	at com.nh.excutor.TaskExcutor.process(TaskExcutor.java:136)
+	at com.nh.excutor.TaskExcutor.run(TaskExcutor.java:87)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO] 2020-12-14 18:37:02,836 com.nh.util.EncryptUtil makeMpsRequestUrl - step 4: create signature for authentication ---> 
+[ERROR] 2020-12-14 18:37:02,841 com.nh.util.EncryptUtil verifyMsgSignature - verifyMsgSignature
+java.lang.StringIndexOutOfBoundsException: String index out of range: -4
+	at java.lang.String.charAt(String.java:658)
+	at org.bouncycastle.util.encoders.Base64Encoder.decode(Unknown Source)
+	at org.bouncycastle.util.encoders.Base64.decode(Unknown Source)
+	at com.nh.util.EncryptUtil.verifyMsgSignature(EncryptUtil.java:198)
+	at com.nh.util.EncryptUtil.makeMpsRequestUrl(EncryptUtil.java:422)
+	at com.nh.util.EncryptUtil.sendRequestToMps(EncryptUtil.java:358)
+	at com.nh.excutor.TaskExcutor.process(TaskExcutor.java:136)
+	at com.nh.excutor.TaskExcutor.run(TaskExcutor.java:87)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO] 2020-12-14 18:37:02,844 com.nh.util.EncryptUtil makeMpsRequestUrl - step 5: authentication signature ----------> false
+[INFO] 2020-12-14 18:37:54,992 com.nh.Start main - ======================================================================
+Developed by: ken
+======================================================================
+
+[INFO] 2020-12-14 18:37:54,994 com.nh.Start main - log home config: etc/config.properties
+[INFO] 2020-12-14 18:37:54,994 com.nh.Start main - log CONFIG_FILE: etc/config.properties
+[INFO] 2020-12-14 18:37:55,064 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2020-12-14 18:37:55,803 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2020-12-14 18:37:55,885 com.nh.database.DirectConnection init - DBThread Oracel-0Connecting to 'VAS_SUPERGOLO_2020'
+[INFO] 2020-12-14 18:38:00,088 com.nh.database.DirectConnection connectToOraServer - DBThread Oracel-0CONNECTED.
+[INFO] 2020-12-14 18:38:00,089 com.nh.database.DirectConnection init - DBThread Oracel-0CONNECTED.
+[INFO] 2020-12-14 18:38:00,103 com.nh.excutor.TaskManagement loadCommand - add command: * 18 * * * PR_SMS_NOTIFY
+[INFO] 2020-12-14 18:38:00,109 com.nh.excutor.TaskQueue getInstance - length of excutor: 1
+[INFO] 2020-12-14 18:38:00,118 com.nh.excutor.TaskQueue enqueue - enqueue queue(1): PR_SMS_NOTIFY
+[INFO] 2020-12-14 18:38:01,651 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2uagocaeqxbyy81praoua|78334ba0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 2uagocaeqxbyy81praoua|78334ba0, idleConnectionTestPeriod -> 30, initialPoolSize -> 2, jdbcUrl -> jdbc:oracle:thin:@localhost:2173/marketdg, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 45, maxPoolSize -> 5, maxStatements -> 1500, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> select 1 from dual, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 1, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO] 2020-12-14 18:38:12,124 com.nh.excutor.TaskExcutor process - Winner update processed: Winner=13-DEC-20-872032111
+[INFO] 2020-12-14 18:38:23,276 com.nh.util.EncryptUtil makeMpsRequestUrl - ======> check key at folder :etc/mps_key/SUPERGOLO_OTHER_WIN/
+[INFO] 2020-12-14 18:38:23,647 com.nh.util.EncryptUtil makeMpsRequestUrl - ==============>>>>> BUILD DATA TO SEND TO MPS<<===============
+[INFO] 2020-12-14 18:38:23,648 com.nh.util.EncryptUtil makeMpsRequestUrl - step 1: data input  -------->SUB=SUPERGOLO_OTHER_WIN&REQ=faf1539f-9965-4480-9958-94e48c8383c2&SESS=99820201214183814790&SUB_CP=&CONT=SUPERGOLO_OTHER_WIN|MODBALANCEN&PRICE=5000&MOBILE=872032111&ITEM=SUPERGOLO_OTHER_WIN&SOURCE=CLIENT&TYPE=MOBILE&IMEI=NULL&CATE=WIN50&RANK=84&POINT=301&CODE=829723
+[INFO] 2020-12-14 18:38:23,671 com.nh.util.EncryptUtil makeMpsRequestUrl - step 2: decode AES for input ------->value=EQ8VagqeQhday/FMhcKRtXbtUcqTZNUW3hQr4fJd0G5TKBrpXQIkPyTO2bfLosjAvb5oAXe+ArqtwXGpFPHz7EpeqO+sMw6euqHmRRX2+FEOUwmpjPDG5JA4SrVr3q4n1UkSUIpx5DPjoI4YAAOm6rPXONELOTKFZ9ViHxY9oDPI3XoNeeJGo6tf1AY7aT9S8t/k5ENJ4Qyrh9mH0AQZtl6y1peWjk9rFDiYKqbD4ne73d/fv/+sVr8kiY+9rDCZJQHpf8uLSsg7uKTtCPrmX++QpdVgF8Zm3mmm1Rkvm7dS6JdE1zb2W4asooKrnRaHs9nAMzy6veyYgsmH6PzInVk2n21RGDnrAIcvkVb7cac=&key=1a94d83974f4a7735d4a3d8b260e9a27
+[INFO] 2020-12-14 18:38:23,716 com.nh.util.EncryptUtil makeMpsRequestUrl - step 3: input add RSA for input --->nqTAlXnEGz30W1+5RToewqzzEc5vkl2erAqHeCKZet2b+SLgaieIQ3C0k2RPlQcSYn9LYRuuvFx6L8JRfVjZI4khQufhcXknFV/SPXmaG/XIEZ0YnOHtZKj0TzkQApKPrx+OL6lazOmOlyi4WF+lInHMxyG6N4GFytC20k8LJpZS/61ks/82rg49eHrnGHrp9Vt8u94HPdlVrRLn/Juvonr90TOxcHpj6OiOskUd3wCph7bT7N/RmWithQniDFaTUfFCpYH+ENZ5E5+Ajv8By8BOK9Kus56cPe1p9zvgSh2r6q1zHMN+d50i5B3fuVKPbrayeuvwA3Lg3FaMgrCE10RxUOvEo3fxSYrBaXB234rEhuSXSdDzhT5NorBBH/QBK3W4RVpDCX6ty2c35FjgJ6v/KPiAz+96qmmERugpYRmrkBjXNwTn5nLgUejLZdlUOIFUUzLhtzN7XfgzvcHERVAVw/cBhWMLsYK9X3pp+/nYk37Lin7uu1T32QOkVHmJZz4MZVWO6o6XNmwSKGtVdHszDWDcBThK2aUa9IVqfu/GVXFb3i7YHGsWkuKHlwDxKFZ4QL6A38HP09u96qIKua/UVgfGR5u3l2yFZnp7zV3bVWZiQJhwMDgZGAMNzLIFc/2SkySmP9/gH535AGsSKyi7X40fQ8J7t2Qe9ViPGRU=
+[INFO] 2020-12-14 18:38:25,366 com.nh.util.EncryptUtil makeMpsRequestUrl - step 4: create signature for authentication ---> tUDKw9ZWDvnzJg9u7mx4irn9H3iZEaVHsdnhEUJGpJ%2F3BiufXF%2BoK8nXuittYEt0EZ5t7%2BOmlF18mhgkcOtz%2B7advFH3xdkWkx7%2Fnwt2ptrE5gcoXaP3iynw2z0nuGZ5EEfGi29KdrIJnE288dEbXBBbyZRy15JqGIKJ5Ge1eLaY8eLHne0qW455CNk5lFR25ba4J%2FI5ViATg9qMdOEounfDJ0DF1kJ7EM55oXPEyttKranc2ifgghgiJh73xPvZl0cAeRpPLjr2gYoWIiR7BJuBVq%2BKHRt0tB8ZOt7yDeiUZ57Q1zm3XeSvhle4dcS%2FrR4KnXeZkHG4io6URWZFtIjggLzaztU1DD%2FauUQqVnc%2Frj89P5Z28fUI80lRf1vJJc26AwdTkfaRxqb%2FEVYaC7gtnoRMXlfvJkck2rlwUBHU1RNnyyW2lgmvYZ7uTv4pbvQV4ZiWkIqAzrZDMOnWdz%2F9lfWT%2BTwDnGkFXjZr9xKSUzzIPJCCsSHgzKqCFCUcOZI0TY7%2FtU7DSTEemL%2B9ZTsWncJzKsw%2FnsCxh51nBf%2BwRDAedbYR3BJ706r4WCPTfnuwvs1jTsvagYdAWDpr2a9SOLKj26VmKzrC%2BPZDFHFzTcVSbK7Lo8a0ggbOIazqoHpZLYhPnv7z5gCqJSmpUH3RZ0rmW724lVdZK4fYLmI%3D
+[INFO] 2020-12-14 18:38:25,391 com.nh.util.EncryptUtil makeMpsRequestUrl - step 5: authentication signature ----------> true
+[INFO] 2020-12-14 18:38:26,616 com.nh.util.EncryptUtil sendRequestToMps -  step 6: url request toi SMS GLOBAL API -----> http://10.229.40.105:9181/MPS/charge.html?PRO=VSMOBILE&SER=SUPERGOLO&SUB=SUPERGOLO_OTHER_WIN&CMD=MODBALANCEN&DATA=nqTAlXnEGz30W1%2B5RToewqzzEc5vkl2erAqHeCKZet2b%2BSLgaieIQ3C0k2RPlQcSYn9LYRuuvFx6L8JRfVjZI4khQufhcXknFV%2FSPXmaG%2FXIEZ0YnOHtZKj0TzkQApKPrx%2BOL6lazOmOlyi4WF%2BlInHMxyG6N4GFytC20k8LJpZS%2F61ks%2F82rg49eHrnGHrp9Vt8u94HPdlVrRLn%2FJuvonr90TOxcHpj6OiOskUd3wCph7bT7N%2FRmWithQniDFaTUfFCpYH%2BENZ5E5%2BAjv8By8BOK9Kus56cPe1p9zvgSh2r6q1zHMN%2Bd50i5B3fuVKPbrayeuvwA3Lg3FaMgrCE10RxUOvEo3fxSYrBaXB234rEhuSXSdDzhT5NorBBH%2FQBK3W4RVpDCX6ty2c35FjgJ6v%2FKPiAz%2B96qmmERugpYRmrkBjXNwTn5nLgUejLZdlUOIFUUzLhtzN7XfgzvcHERVAVw%2FcBhWMLsYK9X3pp%2B%2FnYk37Lin7uu1T32QOkVHmJZz4MZVWO6o6XNmwSKGtVdHszDWDcBThK2aUa9IVqfu%2FGVXFb3i7YHGsWkuKHlwDxKFZ4QL6A38HP09u96qIKua%2FUVgfGR5u3l2yFZnp7zV3bVWZiQJhwMDgZGAMNzLIFc%2F2SkySmP9%2FgH535AGsSKyi7X40fQ8J7t2Qe9ViPGRU%3D&SIG=tUDKw9ZWDvnzJg9u7mx4irn9H3iZEaVHsdnhEUJGpJ%2F3BiufXF%2BoK8nXuittYEt0EZ5t7%2BOmlF18mhgkcOtz%2B7advFH3xdkWkx7%2Fnwt2ptrE5gcoXaP3iynw2z0nuGZ5EEfGi29KdrIJnE288dEbXBBbyZRy15JqGIKJ5Ge1eLaY8eLHne0qW455CNk5lFR25ba4J%2FI5ViATg9qMdOEounfDJ0DF1kJ7EM55oXPEyttKranc2ifgghgiJh73xPvZl0cAeRpPLjr2gYoWIiR7BJuBVq%2BKHRt0tB8ZOt7yDeiUZ57Q1zm3XeSvhle4dcS%2FrR4KnXeZkHG4io6URWZFtIjggLzaztU1DD%2FauUQqVnc%2Frj89P5Z28fUI80lRf1vJJc26AwdTkfaRxqb%2FEVYaC7gtnoRMXlfvJkck2rlwUBHU1RNnyyW2lgmvYZ7uTv4pbvQV4ZiWkIqAzrZDMOnWdz%2F9lfWT%2BTwDnGkFXjZr9xKSUzzIPJCCsSHgzKqCFCUcOZI0TY7%2FtU7DSTEemL%2B9ZTsWncJzKsw%2FnsCxh51nBf%2BwRDAedbYR3BJ706r4WCPTfnuwvs1jTsvagYdAWDpr2a9SOLKj26VmKzrC%2BPZDFHFzTcVSbK7Lo8a0ggbOIazqoHpZLYhPnv7z5gCqJSmpUH3RZ0rmW724lVdZK4fYLmI%3D
+[INFO] 2020-12-14 18:38:26,621 com.nh.util.EncryptUtil decodeMpsResponse - ================>>>DECODE DATA RETURN FROM MPS<<===============
+[INFO] 2020-12-14 18:38:26,626 com.nh.util.EncryptUtil decodeMpsResponse - step add: sigN = QKJtkBW3LhHEJXO%2Bn8LjllfhScyAZNL1lKiuoZml7j4zy4j6502C1738bwAAiSOCqfXIDn1JFna4yAA1wPov1hNxjfe3DiAhoOWwmVUHEMChEThlcEZjgDpukWj8ATkNZWaCU424HHQbsSGNwn%2Fft8Gx63aJItXk3pMgHbCTxh1ses63M%2FyCWwIJw5hrGevUl7SvCs6ZsMz2CxgmENRBz2hW2F771jrlLH7OPgA%2Bl787TR%2FrzBLctc%2BaPo%2BLJ%2FF1wH6Sxd%2FmKWtZbw9bD0Es6sLCqwjhv1e7sQ%2FRirTu8o6IaAB90nxg%2FGk0IpTDLtF8BANyWdNSet9p%2BQSAiuD3pjS4d7CIdrI%2Frf3Pu8sslcbxzMfkeIBDpaykn0ZHPGZxBM%2FQxXNHk9jPMlqa3HtWXQtsDCPfFytegcZIagpPrWwaj7UFDRO0GuEpJU8tR1v6rhR7YBWg9RqBBfBY2jIeLrwuTPHW48DHWn3ku926hHGLjcqY1mbkBTJotQSJ7pCu2q4k0N2LzJMHzgDgO7s6M%2FV9zEttr1UvJMI7IN2w60wF4bVwMrzZX6l6sI5saJqkFyuwQLrdYeZ8Zl1TwHtw0C8EvhZYbdw54pclii4WWCrk2%2FjAidQX5UD3bSRfpdwg2O2RiG8l59dbZE4dX7JuuvfViYzJ7B61o3LiwtOppiA%3D
+[INFO] 2020-12-14 18:38:26,672 com.nh.util.EncryptUtil decodeMpsResponse -   step 7: data receive from mps dataN = -----> kpCs+vQDHv6qaQuSd2jqSGdAEOAkf0p9TGIDRGRA3jTA/fzY+GNzXLNIZJ7a8XHsO1Xsjvt4ryPg8RDvQ027pMWRdw3cOKsx2aOEEktMr1OByCe/GeEPVveGGOQ7FxVLE0reGpHpNe9M5KgiFTdTWKfKWPbrg7xcbNh4ju1YDKd6EwCwwFMdTdX48j4ENvCNhjLI+mX7PCem0e64KisxWcN2QzwxLD+Uix/gEVCElKCdaqSUpfNsdOmxzUyKLRO4F7HKvIxiA1MZLAot+G7c8vIv4UHch5qS8dbLOBbjEuy1WSgRTcrnG6t02gwZTxxrSAE1q5Rkrt3MqB1ihHqXQt3+sRo9RzpBwnFKh57OlEguIcWqqm7U23qe96RQIN93kJDNG5l4ttyvYHD9oWN+MS3Z/luHGZo/dsHBYkOPCP84CoQPenEj/e1O2XgpSTDVCSlNMrAdaCU/rWU0lc5OJWggUOvBei2ghvvZqoIJfI5L+hW6yL+eFQWMMQGTtmrW7FpW0h5wmnnLiNXmDc0UTYPTgyIBFhJXm853kbSao+4Tj/sF803Qi3GJ5YivcevrJfSUIeQIZGecB6rKjp0vzPwd1zQl4hvvMtUoeU/XZ1FtNHZj0yXvOIKi2FR20tgfptu5K560uGjeflUQsZvcVtoZEssUfmVuczKFkxUzHBk=
+[INFO] 2020-12-14 18:38:26,674 com.nh.util.EncryptUtil decodeMpsResponse -   step 8: check signuature ---------> true
+[INFO] 2020-12-14 18:38:28,197 com.nh.util.EncryptUtil analyseCodeReturn -    step 9: decode data return from mps ----> REQ=faf1539f-9965-4480-9958-94e48c8383c2&RES=0&MOBILE=872032111&PRICE=5000&CMD=MODBALANCEN&SOURCE=CLIENT
+[INFO] 2020-12-14 18:38:28,200 com.nh.util.EncryptUtil analyseCodeReturn -    step 10: analyse RES code return ---> RES=0==>  Transaction success
+[INFO] 2020-12-14 18:38:30,538 com.nh.excutor.TaskExcutor process - command: MODBALANCEN,msisdn:  872032111 => status: 0|Transaction success
+[INFO] 2020-12-14 18:38:37,473 com.nh.excutor.TaskExcutor process - convert code: 0|Transaction success=> 0, for cmd: MODBALANCEN
+[INFO] 2020-12-14 18:38:52,195 com.nh.proccess.InsertCdrProcess enqueue - enqueue cdr: (1):872032111|SUPERGOLO_OTHER_WIN| response: 0|price: 5000.0|null| cmd: MODBALANCEN
+[INFO] 2020-12-14 18:38:52,197 com.nh.excutor.TaskExcutor process - TaskExcutor-0-end run: PR_SMS_NOTIFY, duration (ms):43081
+[INFO] 2020-12-14 18:38:53,069 com.nh.proccess.InsertCdrProcess process - cdr processed batch size: 1
+[INFO] 2020-12-14 18:38:58,070 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:39:03,070 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:39:08,071 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:39:13,071 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:39:18,072 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:39:23,074 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:39:28,074 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:39:33,075 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:39:38,075 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:39:43,076 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:39:48,076 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:39:53,076 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:39:58,077 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:40:03,078 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:40:08,079 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:40:13,080 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:40:18,081 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:40:23,081 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:40:28,081 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:40:33,082 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:40:38,082 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:40:43,083 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:40:48,084 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:40:53,085 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:40:58,085 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:41:03,086 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:41:08,087 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:41:13,087 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:41:18,087 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:41:23,087 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:41:28,087 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:41:33,089 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:41:38,089 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:41:43,090 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:41:48,090 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:41:53,091 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:41:58,091 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:42:03,091 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:42:08,091 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:42:13,092 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:42:18,092 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:42:23,092 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:42:28,095 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:42:33,096 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:42:38,098 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:42:43,099 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:42:48,100 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:42:53,100 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:42:58,100 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:43:03,100 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:43:08,101 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:43:13,101 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:43:18,102 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:43:23,103 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:43:28,104 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:43:34,169 com.nh.Start main - ======================================================================
+Developed by: ken
+======================================================================
+
+[INFO] 2020-12-14 18:43:34,172 com.nh.Start main - log home config: etc/config.properties
+[INFO] 2020-12-14 18:43:34,172 com.nh.Start main - log CONFIG_FILE: etc/config.properties
+[INFO] 2020-12-14 18:43:34,229 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2020-12-14 18:43:34,948 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2020-12-14 18:43:35,030 com.nh.database.DirectConnection init - DBThread Oracel-0Connecting to 'VAS_SUPERGOLO_2020'
+[INFO] 2020-12-14 18:43:39,237 com.nh.database.DirectConnection connectToOraServer - DBThread Oracel-0CONNECTED.
+[INFO] 2020-12-14 18:43:39,238 com.nh.database.DirectConnection init - DBThread Oracel-0CONNECTED.
+[INFO] 2020-12-14 18:43:39,242 com.nh.excutor.TaskManagement loadCommand - add command: * 18 * * * PR_SMS_NOTIFY
+[INFO] 2020-12-14 18:43:39,244 com.nh.excutor.TaskQueue getInstance - length of excutor: 1
+[INFO] 2020-12-14 18:43:39,249 com.nh.excutor.TaskQueue enqueue - enqueue queue(1): PR_SMS_NOTIFY
+[INFO] 2020-12-14 18:43:40,494 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2uagocaeqxj8neoj76am|3ffa1b16, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 2uagocaeqxj8neoj76am|3ffa1b16, idleConnectionTestPeriod -> 30, initialPoolSize -> 2, jdbcUrl -> jdbc:oracle:thin:@localhost:2173/marketdg, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 45, maxPoolSize -> 5, maxStatements -> 1500, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> select 1 from dual, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 1, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO] 2020-12-14 18:43:49,742 com.nh.excutor.TaskExcutor process - Winner update processed: Winner=13-DEC-20-872032111
+[INFO] 2020-12-14 18:43:58,668 com.nh.util.EncryptUtil makeMpsRequestUrl - ======> check key at folder :etc/mps_key/SUPERGOLO_OTHER_WIN/
+[INFO] 2020-12-14 18:43:59,066 com.nh.util.EncryptUtil makeMpsRequestUrl - ==============>>>>> BUILD DATA TO SEND TO MPS<<===============
+[INFO] 2020-12-14 18:43:59,067 com.nh.util.EncryptUtil makeMpsRequestUrl - step 1: data input  -------->SUB=SUPERGOLO_OTHER_WIN&REQ=20368287-7006-4f86-836c-3f72fdef0e6b&SESS=99820201214184352372&SUB_CP=&CONT=SUPERGOLO_OTHER_WIN|MODBALANCEN&PRICE=5000&MOBILE=872032111&ITEM=SUPERGOLO_OTHER_WIN&SOURCE=CLIENT&TYPE=MOBILE&IMEI=NULL&CATE=WIN50&RANK=84&POINT=301&CODE=829723
+[INFO] 2020-12-14 18:43:59,092 com.nh.util.EncryptUtil makeMpsRequestUrl - step 2: decode AES for input ------->value=cpqGHUXf4fTpS0P/WksO+aSFptzN+Gr65XwuCPBLkgrXDT+OeU2VZDVZ0Ta+UyIcnSYp+DOQd3p9UPTOLTwotFCBbMUloeaCybpze+iD2mHR/W+qXDV76LLMJryWgtr2nFrFzaOUsOlh/y7rFhKqj3tsLowbshnWO7fJxdDmKn5KyjvytrGjM/n/k6267+RAF6KJmapcnzCN9Q32YY3rjSTv8N3rpcdHRg/NZtwshk3OmUEqmNm4Nyx/d7BL7Ua5lodW8Ze6/zyrXSS1wbVoVkt8woAtMlBNWlBibUFKG/SRIqkZHqbWprOCPepgijf66SK7cafdpuOF5Hu/yxdYzmDEDizm6yVv05OskmCsS3U=&key=3b9af5dc430d5cd0f80c01dec1a53369
+[INFO] 2020-12-14 18:43:59,139 com.nh.util.EncryptUtil makeMpsRequestUrl - step 3: input add RSA for input --->M8g0xddYpoTDnhz+TBXzl41JaHQRN2xwGlmruzTpNDHRCFx4sDFO7nXKmgieQcuLhDER7s3/b7PKGxOVTcstvNMxQdudzZJJVsuIpOnmLmSukyk+aCBW/fheABvNoPHKYnklvXr1cr2qgD5znbfGloBelZ9/JTSE4EEZgrc0cm7S9kOz7DeD09/7U2QclR5cNaocQmwZY7BUnqdB5GRt1Eq9mvc/HyKfyxFiT0wSK2P0gmJeDSulVtpJMcKXvvwp30uYZHKXr0Aodyn5/Mzw8E7gSAAdE7Ivv6qCT1EgwC7NKdvJQ2cEdhj/hOgrQFdLnZC7pFRYAlBrqKP+m8vU5BanRif7IQGeQjY1+/AtznCFaiJ4i2ZpddLyEgvLiKawwhl90pTZL4a8P5sPkarR6IX8bf4duQomgUakESi+w77EQsi9xnANaiicX9ohnQlM1p4WAG3XrkireFnIUMrRlCxuV0Aea+lToTEe178sd/bmmiZEiG7htzmPIzPrnJkAmzwBY6Flyl3ivAEB5tsTnb8rI0bFvMmKiuEw6bloIuiBl+OtXET4UoCvYO+YQdcT4l1sUmKplZLOY91u5NloZ5Oz6eBIiHVsICVwkkECjCB4JDYlJaTNMcTN5ii8zksRzt2oJpAZEh05qcHcY0IKmHgM0Uytp55KhY0krljx/Bo=
+[INFO] 2020-12-14 18:44:00,852 com.nh.util.EncryptUtil makeMpsRequestUrl - step 4: create signature for authentication ---> kjMJ1xA4FZaorg3xrPeeDQONRfjSUrcmaflqPulHy6qBC%2Ba9ZpminhrvPrUpgOVYPqSl8rFXGUXLJLUtjUw1CEp%2Fma%2FtM0E4MqfGubjypsaWDYuzVihwfrBNOA9BZUeLuQAv%2F7Qs7JIHP4AX0t4Odd72bBtvnghXqvw%2BPTNnrtZZQEBLX8SLESer3GV0Bo1BAlr4hg0CHQF%2BS%2BayJGZ28HzO5V8p65F1pG4i0ovQ9al3kVUPYMd87OFNMKl5gTrK2v1CSVAbqZrzz3bOt4SG6jcYj9fm1wChFLgZxK6bWYvfFQSY8DicdGfAP1r4MzwCCe00OYBa6LccoprqR5%2B6FrMwI1W%2BZLsMJWWMOu7jmKTuFBezqnrS%2FR51SOPYbeF1XvOvtYaHVHJXQMkzhK5Iih%2Fur3SAiQ2DuayDsBCRQFjYWtrLRPWAewaBPZcnwwFRD7Ek6cd%2FcxOmpLdG04sMVG5ZAVBsXjCMhetMdkS%2FgUCVRNMEgx2nv2hdPuSWawJ4vkShy44eiVGiTazZzfnrLSW6j7mDMUjhe%2FN7xkh0UTGU%2BqkSPAwqSNnFK5zr7w7nQyoVvxdXrl7mtOMHjKFKsAsFkij72Pju7El7gEzGaZMIxSztCJt9uobTBOVjRQfYeCWNJ5tObcaSkBKDGLk4HNxuH4a%2FEUgj%2FQt4KzsC6oE%3D
+[INFO] 2020-12-14 18:44:00,879 com.nh.util.EncryptUtil makeMpsRequestUrl - step 5: authentication signature ----------> true
+[INFO] 2020-12-14 18:44:02,144 com.nh.util.EncryptUtil sendRequestToMps -  step 6: url request toi SMS GLOBAL API -----> http://10.229.40.105:9181/MPS/charge.html?PRO=VSMOBILE&SER=SUPERGOLO&SUB=SUPERGOLO_OTHER_WIN&CMD=MODBALANCEN&DATA=M8g0xddYpoTDnhz%2BTBXzl41JaHQRN2xwGlmruzTpNDHRCFx4sDFO7nXKmgieQcuLhDER7s3%2Fb7PKGxOVTcstvNMxQdudzZJJVsuIpOnmLmSukyk%2BaCBW%2FfheABvNoPHKYnklvXr1cr2qgD5znbfGloBelZ9%2FJTSE4EEZgrc0cm7S9kOz7DeD09%2F7U2QclR5cNaocQmwZY7BUnqdB5GRt1Eq9mvc%2FHyKfyxFiT0wSK2P0gmJeDSulVtpJMcKXvvwp30uYZHKXr0Aodyn5%2FMzw8E7gSAAdE7Ivv6qCT1EgwC7NKdvJQ2cEdhj%2FhOgrQFdLnZC7pFRYAlBrqKP%2Bm8vU5BanRif7IQGeQjY1%2B%2FAtznCFaiJ4i2ZpddLyEgvLiKawwhl90pTZL4a8P5sPkarR6IX8bf4duQomgUakESi%2Bw77EQsi9xnANaiicX9ohnQlM1p4WAG3XrkireFnIUMrRlCxuV0Aea%2BlToTEe178sd%2FbmmiZEiG7htzmPIzPrnJkAmzwBY6Flyl3ivAEB5tsTnb8rI0bFvMmKiuEw6bloIuiBl%2BOtXET4UoCvYO%2BYQdcT4l1sUmKplZLOY91u5NloZ5Oz6eBIiHVsICVwkkECjCB4JDYlJaTNMcTN5ii8zksRzt2oJpAZEh05qcHcY0IKmHgM0Uytp55KhY0krljx%2FBo%3D&SIG=kjMJ1xA4FZaorg3xrPeeDQONRfjSUrcmaflqPulHy6qBC%2Ba9ZpminhrvPrUpgOVYPqSl8rFXGUXLJLUtjUw1CEp%2Fma%2FtM0E4MqfGubjypsaWDYuzVihwfrBNOA9BZUeLuQAv%2F7Qs7JIHP4AX0t4Odd72bBtvnghXqvw%2BPTNnrtZZQEBLX8SLESer3GV0Bo1BAlr4hg0CHQF%2BS%2BayJGZ28HzO5V8p65F1pG4i0ovQ9al3kVUPYMd87OFNMKl5gTrK2v1CSVAbqZrzz3bOt4SG6jcYj9fm1wChFLgZxK6bWYvfFQSY8DicdGfAP1r4MzwCCe00OYBa6LccoprqR5%2B6FrMwI1W%2BZLsMJWWMOu7jmKTuFBezqnrS%2FR51SOPYbeF1XvOvtYaHVHJXQMkzhK5Iih%2Fur3SAiQ2DuayDsBCRQFjYWtrLRPWAewaBPZcnwwFRD7Ek6cd%2FcxOmpLdG04sMVG5ZAVBsXjCMhetMdkS%2FgUCVRNMEgx2nv2hdPuSWawJ4vkShy44eiVGiTazZzfnrLSW6j7mDMUjhe%2FN7xkh0UTGU%2BqkSPAwqSNnFK5zr7w7nQyoVvxdXrl7mtOMHjKFKsAsFkij72Pju7El7gEzGaZMIxSztCJt9uobTBOVjRQfYeCWNJ5tObcaSkBKDGLk4HNxuH4a%2FEUgj%2FQt4KzsC6oE%3D
+[INFO] 2020-12-14 18:44:02,148 com.nh.util.EncryptUtil decodeMpsResponse - ================>>>DECODE DATA RETURN FROM MPS<<===============
+[INFO] 2020-12-14 18:44:02,153 com.nh.util.EncryptUtil decodeMpsResponse - step add: sigN = QIsYu941kO4yV5jWHwL6xoNVKgGgHVhkXkhTkGUJXmhNOWtEwiaRCBjtmt7gywwQYEQWcTbkkVP6S5G7iJm13rty4UBNw4Ftfd4SjXqeQ%2F2zYYm1BKVFeBm5CT7UW1jTOrDyazRBb5dvm47RFnT4Ciyuk93K7p25FH9jXo%2BFfMPSToVFhaYRhI8wuNVEy4V1Px5iSglyFSmv5H1FuD4RIktyHYfXGl85UZZFEhAatzYtGwoR71TW3MxcT3CSWaS6pjVhLixweXVZkVvJy3CqrutR4S9SWKhq3R6VMNHyJnfK%2Fmmxt76wD7HWiFkPEMO2OlWuHn0Vu%2F2UntsoQqGcf4LW9AcrmZnl0OjLvkOd%2BdG%2Bb%2FXWgnRmH9mMuulk5mwshdVeqpHjKpFcuAyvZzjsZ8fc44P8b2gJlt0SWmOWKKbf%2Bi8Ao3wlPMFSc%2BJBcRglkzkIEDLiEaQFnioWk5sTdEqtHzSFSC4nPoRYOxCdV3s75u2yWrlB9YQAekrFWlGh8%2FlPdYmVe%2FAGA0Q7E1je3N3mb4e5ayXxdp9qT8mMWwcmYdWBzAiGt6tW2FMJL%2BfS1vURGR0fKPx7PRc3EazlVjcwaKLJ%2FJfK1G6AQsV%2BnAmL%2BRd8mkqQ9XUP30mFyQD8MCmJFOi5ryb3mArTwdOSRSQu6bt9rEH8kRTqHPcxSxc%3D
+[INFO] 2020-12-14 18:44:02,212 com.nh.util.EncryptUtil decodeMpsResponse -   step 7: data receive from mps dataN = -----> IcdXE3LtyFqS2RITRvEnvEbdB59xDaTeGChS1peIJgX8jtBr/85kabfu5EBPnSs2zB7oU1Mx8WZ+jWZQqquw0S62EJhFfOL8JSPkbi6161oeXO+O7WagwiSAuZZfM9Naqjkdx/ryP8Bc1gEjssc2mIN8haLaGwCkgZ/ZmZDDM1uaROrlureSuptOtmwcUkC/mzsddIPmkgO1vkRZIkWlSQwQzLmaqtdVj52XuysX2zRwenT+GV7earbehgxFvG4Yf70mpuo/lme82choFhhEkSvC+oUBF3CkGXSXQiMXyRrRxVCgfTiDKNpEnNH1Gv2EvjaNQY+F6Qxvnuewq3XdKWxRbCJC1Eda1u5JTuPPLbCwjdoAUVVGJjq6/nQYiH6A+dPfs2oT1itfpEmt8DkcYUCJU4f9Kc8S34LGtguDpMqN9Vgw+U2PDWq/koHRo1szrxxoD2gVoiPaoTp0W1n8RjCi40ApqPiXdOjsXnYFt5ySPQ2LnYqZEhZG/dTsNEOQtx7enY08tcct1kok8ZL9MDAk2VGMH5E0/WF++06H6lUekxRqs0gcBBldf/03N7BtYzO5n3xa11Clmr7oMY5R9KVkMpL+dsodi53yoQZH5QXTGas+O4FrfFIs5teAyfvmxHY8AeSS0WPx5o9TFXpIPfBnLAs96vzim9qnZQGnF5s=
+[INFO] 2020-12-14 18:44:02,213 com.nh.util.EncryptUtil decodeMpsResponse -   step 8: check signuature ---------> true
+[INFO] 2020-12-14 18:44:03,742 com.nh.util.EncryptUtil analyseCodeReturn -    step 9: decode data return from mps ----> REQ=20368287-7006-4f86-836c-3f72fdef0e6b&RES=0&MOBILE=872032111&PRICE=5000&CMD=MODBALANCEN&SOURCE=CLIENT
+[INFO] 2020-12-14 18:44:03,746 com.nh.util.EncryptUtil analyseCodeReturn -    step 10: analyse RES code return ---> RES=0==>  Transaction success
+[INFO] 2020-12-14 18:44:05,010 com.nh.excutor.TaskExcutor process - command: MODBALANCEN,msisdn:  872032111 => status: 0|Transaction success
+[INFO] 2020-12-14 18:44:05,693 com.nh.excutor.TaskExcutor process - convert code: 0|Transaction success=> 0, for cmd: MODBALANCEN
+[INFO] 2020-12-14 18:44:05,699 com.nh.proccess.InsertCdrProcess enqueue - enqueue cdr: (1):872032111|SUPERGOLO_OTHER_WIN| response: 0|price: 5000.0|null| cmd: MODBALANCEN
+[INFO] 2020-12-14 18:44:05,700 com.nh.excutor.TaskExcutor process - TaskExcutor-0-end run: PR_SMS_NOTIFY, duration (ms):19298
+[INFO] 2020-12-14 18:44:06,541 com.nh.proccess.InsertCdrProcess process - cdr processed batch size: 1
+[INFO] 2020-12-14 18:44:11,543 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:44:16,543 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:44:21,544 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:44:26,544 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:44:31,545 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:44:36,547 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:44:41,548 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:44:46,548 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:44:51,549 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:44:56,550 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:45:01,551 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:45:06,551 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:45:11,553 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:45:16,554 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:45:21,554 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:45:26,555 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:45:31,555 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:45:36,555 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:45:41,556 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:45:46,556 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:45:51,557 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:45:56,557 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:46:01,558 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:46:06,559 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:46:11,561 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:46:16,563 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:46:21,563 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:46:26,564 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:46:31,564 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:46:36,565 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:46:41,565 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:46:46,566 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:46:51,566 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:46:56,566 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:47:01,567 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:47:06,567 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:47:11,567 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:47:16,568 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:47:21,569 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:47:26,570 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:47:31,571 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:47:36,572 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:47:41,572 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:47:46,573 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:47:51,574 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:47:56,575 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:48:01,576 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:48:06,577 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:48:11,579 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:48:16,582 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:48:21,583 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:48:26,584 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:48:31,583 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:48:36,584 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:48:41,585 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:48:46,586 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:48:51,586 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:48:56,587 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:49:01,589 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:49:06,590 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2020-12-14 18:49:11,594 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5

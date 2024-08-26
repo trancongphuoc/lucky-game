@@ -1,0 +1,354 @@
+#bodyDiv {
+    margin:0px;
+    padding:0px;
+}
+
+#wrapDiv {
+    margin:0px;
+    padding:0px;
+    margin-top:-4px;
+
+    width:95%;
+    min-width:950px;
+    max-width:1200px;
+}
+
+#bannerDiv {
+    /*background:url( ../images/bg_footer_aurora.jpg ) repeat-x -650px -40px;*/
+    background:url( ../images/header_bg.gif );
+    margin:0px;
+    margin-top:2px;
+    padding:0px;
+
+    /*height:61px;*/
+    height:68px;
+    width:100%;
+    border:0px dashed #fff;
+}
+
+#bannerDiv #logoDiv {
+    /*background:url( ../images/logo.gif ) no-repeat top left;*/
+    background:url( ../images/viettel_logo_combined.jpg ) no-repeat center left;
+
+    margin:0px;
+    padding:0px;
+
+    width:66px;
+    height:68px;
+    float:left;
+}
+
+* html #bannerDiv #logoDiv {
+
+}
+
+#bannerDiv #prjNameDiv {
+    margin:0px;
+    padding:0px;
+    padding-left:40px;
+    padding-top:17px;
+
+    color:#333333;
+    font-weight:bold;
+    font-size:24px;
+
+    float:left;
+}
+
+#bannerDiv #sloganDiv {
+
+    margin:0px;
+    padding:0px;
+
+    padding-top:0px;
+    position:relative;
+
+    top:47px;
+    left:-195px;
+
+    color:#333333;
+    font-size:11px;
+
+    float:left;
+}
+
+#bannerDiv #prjVerDiv {
+    margin:0px;
+    padding:0px;
+    padding-right:0px;
+    padding-top:47px;
+
+    color:#333333;
+    font-size:10px;
+
+    float:right;
+}
+
+#contentDiv {
+    clear:both;
+    background-color:#fff;
+
+    margin:0px;
+    padding:0px;
+
+    width:100%;
+    text-align:left;
+}
+
+#innerContentDiv {
+    margin:0px;
+    padding:5px;
+}
+
+* html #contentDiv {
+    padding:5px;
+}
+
+* html #innerContentDiv {
+    padding:0px;
+}
+
+#footerDiv {
+    /*
+    background:url( ../images/subscribe_bg_tal.jpg ) repeat-x top;
+    background-color:#fff;
+    */
+    background:url( ../images/footer_bg.gif );
+    margin:0px;
+    padding:0px;
+    padding-right:15px;
+    padding-top:15px;
+    padding-bottom:0px;
+
+    font-size:11px;
+    color:#333333;
+    height:35px;
+    /*color:#8E9EC2;*/
+    text-align:right;
+}
+
+
+
+/********************************************************************/
+
+.pageTitle {    
+    margin-left:0px;
+    margin-right:0px;
+    padding-left:0px;
+    padding-top:10px;
+    margin-bottom:0px;    
+    /*background:url( ../images/joomla_template_bg.gif ) repeat-x bottom;*/
+    /*background:url( ../images/joomla_template_bg.gif ) no-repeat;*/
+    height:25px;
+    background-color: #FFFFFF;
+    color:#266ba0;
+    font-size:16px;
+    border-left: 1px solid #b0bfcc;
+    border-right:   1px solid #b0bfcc;
+    width:988px;
+    
+   
+}
+
+* html .pageTitle {
+    height:25px;
+    margin-bottom:0px;
+    
+}
+
+.pageTitle div {
+   /* background:url( ../images/activity_window_32.png ) no-repeat 0px 0px;*/
+    height:25px;
+    margin:0px;
+    padding:0px;
+    padding-left:38px;
+    margin-top:-7px;
+    padding-top:4px;
+    font-weight:bold;
+
+}
+
+.pageTitle #pageTitleLabel {
+    float:left;
+    margin-right:25px;
+}
+
+.pageTitle #pageMessageSpan span {
+    margin:0px;
+    padding:0px;
+    margin-top:-2px;
+    margin-right:25px;
+
+    float:right;
+    display:block;
+
+    text-align:right;
+    white-space:nowrap;
+
+    height:18px;
+    width:18px;
+
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+
+.glbMessageSpan_out
+{
+    background-image:url( ../images/message-shortcut-gray.png );
+}
+.glbMessageSpan_in
+{
+    background-image:url( ../images/message-shortcut.png );
+}
+* html .glbMessageSpan_out
+{
+    background-image:url( ../images/message-shortcut2-gray.png );
+}
+* html .glbMessageSpan_in
+{
+    background-image:url( ../images/message-shortcut2.png );
+}
+
+
+.glbNoticeSpan_out
+{
+    background-image:url( ../images/notice-shortcut-gray.png );
+}
+.glbNoticeSpan_in
+{
+    background-image:url( ../images/notice-shortcut.png );
+}
+* html .glbNoticeSpan_out
+{
+    background-image:url( ../images/notice-shortcut2-gray.png );
+}
+* html .glbNoticeSpan_in
+{
+    background-image:url( ../images/notice-shortcut2.png );
+}
+
+
+.glbAlertSpan_out
+{
+    background-image:url( ../images/alert-shortcut-gray.png );
+}
+.glbAlertSpan_in
+{
+    background-image:url( ../images/alert-shortcut.png );
+}
+* html .glbAlertSpan_out
+{
+    background-image:url( ../images/alert-shortcut2-gray.png );
+}
+* html .glbAlertSpan_in
+{
+    background-image:url( ../images/alert-shortcut2.png );
+}
+
+
+.glbWarningSpan_out
+{
+    background-image:url( ../images/warning-shortcut-gray.png );
+}
+.glbWarningSpan_in
+{
+    background-image:url( ../images/warning-shortcut.png );
+}
+* html .glbWarningSpan_out
+{
+    background-image:url( ../images/warning-shortcut2-gray.png );
+}
+* html .glbWarningSpan_in
+{
+    background-image:url( ../images/warning-shortcut2.png );
+}
+
+.pageTitle #pageTitleSpan span {
+    float:left;
+    display:block;
+
+    text-align:left;
+    font-size:11px;
+    color:#777;
+
+    height:15px;
+}
+
+#homeSpan {
+    background:url( ../images/top_menu_home.gif ) no-repeat top left;
+
+    margin:0px;
+    padding:0px;
+    padding-left:25px;
+    margin-right:15px;
+}
+
+#userSpan {
+    background:url( ../images/top_menu_user.gif ) no-repeat top left;
+
+    margin:0px;
+    padding:0px;
+    padding-left:25px;
+    margin-right:15px;
+}
+
+#logoutSpan {
+    background:url( ../images/top_menu_logout.gif ) no-repeat top left;
+
+    margin:0px;
+    padding:0px;
+    padding-left:25px;
+    margin-right:15px;
+}
+
+* html #logoutSpan {
+    margin-right:7px;
+}
+
+
+
+
+/*     Util block      */
+.wFull /* width full */
+{
+    width:100%;
+}
+
+.wAuto /* width full */
+{
+    width:auto;
+}
+
+.noSpace
+{
+    margin:0px;
+    padding:0px;
+}
+
+.noPadding {
+    padding:0px;
+}
+
+.noMargin
+{
+    margin:0px;
+}
+
+.dInline
+{
+    display:inline;
+}
+
+.dBlock
+{
+    display:block;
+}
+
+.cDefault {
+    cursor:default;
+}
+
+.cPointer {
+    cursor:pointer;
+}

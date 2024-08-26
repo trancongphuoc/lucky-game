@@ -1,0 +1,159 @@
+TABLE.displaytag {
+    padding: 0;
+    /*margin: 1px;*/
+     /*border: 1px solid #E7E7E7;*/
+    width: 100%;
+}
+
+TABLE.displaytag TH {
+    /*background:url( ../images/grid3-hrow.gif ) repeat-x bottom;*/
+    /*background-color:#f9f9f9;*/
+
+    font-weight:bolder;
+    font-family:Tahoma, Helvetica, sans-serif;
+	background: #f0f0f0;
+	color: #15428b;
+	/*border-bottom: 1px solid #999;*/
+	
+    text-align: center;
+    
+    /*border-top: 1px solid #E7E7E7;*/
+}
+
+TABLE.displaytag th a {
+    /*color: #666;*/
+    color: #15428b;
+}
+
+TABLE.displaytag TD {
+    color:#6593cf;
+    /*padding: 2px 3px 2px 3px;*/
+    /*margin: 1px;*/
+
+    font-family:helvetica,arial,tahoma,sans-serif;
+    font-size:11px;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+  
+}
+
+TABLE.displaytag TD img {
+    border: 0;
+}
+
+TABLE.displaytag TD.rightalign {
+    text-align: right;
+}
+
+TABLE.displaytag TD.centeralign {
+    text-align: center;
+}
+
+TABLE.displaytag TR.odd TD {
+    background-color: #FFFFFF;
+
+
+}
+
+TABLE.displaytag TR.even TD {
+    background-color: #F9F9F9;
+
+}
+
+TABLE.displaytag TH.sorted {
+    background-color: #f9e375;
+}
+
+TABLE.displaytag TH.sorted a,
+TABLE.displaytag TH.sortable a {
+    display: block;
+    text-decoration: none;
+}
+
+span.pagebanner {
+    font: normal 0.7em Arial, Helvetica, sans-serif;
+    color: #6593cf;
+    background-color: #eee;
+    border: 1px solid #dedede;
+    padding: 2px 4px 2px 4px;
+    width:inherit;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    display:block;
+    border-bottom: none;
+    font-size: 11px;
+    margin-left:1px;
+
+    display:none;
+}
+
+* html span.pagebanner {
+    width:100%;
+    border: 1px solid #dedede;
+    border-bottom: none;
+}
+
+span.pagelinks {
+    font: normal 0.7em Arial, Helvetica, sans-serif;
+    font-size: 11px;
+
+    background:url( ../images/grid3-hrow.gif ) repeat-x 0% 1px;
+    height:20px;
+   /* width:inherit;*/
+    display:block;
+
+    margin:0px;
+    padding:0px;
+
+    padding-top:4px;
+    padding-left:4px;
+    padding-right:4px;
+
+    border-top: 1px solid #d0d0d0;
+
+    color:#555;
+}
+
+* html span.pagelinks {
+    height:24px;
+    padding-top:4px;
+}
+
+strong {
+    font-weight:bold;
+    color:#7b2e00;
+}
+
+span.pagelinks a {
+    color: #15428b;
+    padding-left:2px;
+    padding-right:2px;
+}
+
+span.pagelinks a:hover {
+    color: #ff8f27;
+}
+
+div.exportlinks {
+    font-size: 0.8em;
+    padding: 2px 4px 2px 4px;
+    margin: 0 0 10px 0;
+    width: 99%;
+}
+
+span.export {
+    padding: 0 4px 1px 20px;
+    display: inline;
+    cursor: pointer;
+}
+
+span.excel {
+    background: url(../../share/img/displaytag/ico_file_excel.png) no-repeat;
+}
+span.csv {
+    background: url(../../share/img/displaytag/ico_file_csv.png) no-repeat;
+}
+span.xml {
+    background: url(../../share/img/displaytag/ico_file_xml.png) no-repeat;
+}

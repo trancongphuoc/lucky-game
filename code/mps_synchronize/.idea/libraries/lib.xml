@@ -1,0 +1,73 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/db2jcc4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxrpc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-beanutils-1.9.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsr250-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jep.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-ssl-pro-v2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-context-4.0.6.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxrpc-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json-simple-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/axis.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/soap.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/streambuffer.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/db2jcc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/c3p0-0.9.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-jdk14-1.6.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/stax-ex.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxws-tools.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsr181-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/sjsxp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-tx-4.0.6.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-beans-4.0.6.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/WSVLib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxb-xjc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mchange-commons-java-0.2.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org-openide-util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-pool-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.15-ext.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-simon-ext-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/WBXMLLib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-httpclient-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-collections-3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-discovery-0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mariadb-java-client-2.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/c3p0-oracle-thin-extras-0.9.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ojdbc6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-dbcp-1.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-codec-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/utils-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-beans-4.1.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/http.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/sendmtv1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ttjdbc6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-jdbc-4.0.6.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-core-4.0.6.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jgroups-2.10.0.GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpmime-4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/utils.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsr173_api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxws-rt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bouncycastle.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxws-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcprov-jdk15-136.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxb-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxb-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ons.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxr-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang3-3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

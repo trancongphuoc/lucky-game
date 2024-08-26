@@ -1,0 +1,408 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    <!--<constant name="struts.devMode" value="true" />-->
+    <package name="default" extends="struts-default">
+        <result-types>
+            <result-type class="org.apache.struts2.views.tiles.TilesResult" default="false" name="tiles"/>
+            <!--<result-type class="org.apache.struts2.json.JSONResult" default="false" name="json"/>-->
+        </result-types>
+        <interceptors>
+            <interceptor name="exception" class="com.viettel.framework.interceptor.VtExceptionInterceptor" />
+            <interceptor name="baseInterceptor" class="com.viettel.framework.interceptor.ActionInterceptor"/>
+            <interceptor-stack  name="fkInterceptor">
+                <interceptor-ref name="baseInterceptor"/>            
+                <interceptor-ref name="checkbox">
+                    <param name="checkbox.uncheckedValue">-1</param>
+                </interceptor-ref>   
+                <interceptor-ref name="validation">
+                    <param name="validateAnnotatedMethodOnly">true</param>
+                </interceptor-ref>
+                <interceptor-ref name="workflow"/>
+                <interceptor-ref name="exception" />
+                <interceptor-ref name="alias" />
+                <interceptor-ref name="servletConfig" />
+                <interceptor-ref name="prepare" />
+                <interceptor-ref name="i18n" />
+                <interceptor-ref name="chain" />
+                <interceptor-ref name="debugging" />
+                <interceptor-ref name="profiling" />
+                <interceptor-ref name="scopedModelDriven" />
+                <interceptor-ref name="modelDriven" />
+                <!--                <interceptor-ref name="fileUpload">
+                    <param name="maximumSize">10485760</param>                    
+                    <param name="allowedTypes"> audio/wav</param>
+                </interceptor-ref>-->
+                <interceptor-ref name="checkbox" />
+                <interceptor-ref name="staticParams" />
+                <interceptor-ref name="actionMappingParams" />
+                <interceptor-ref name="params">
+                    <param name="excludeParams"> dojo\..*,^struts\..*,d-\d+?-[sop]</param>
+                </interceptor-ref>
+                <interceptor-ref name="conversionError" />
+                <interceptor-ref name="validation">
+                    <param name="excludeMethods"> input,back,cancel,browse</param>
+                </interceptor-ref>                
+                <interceptor-ref name="workflow">
+                    <param name="excludeMethods"> input,back,cancel,browse</param>
+                </interceptor-ref>                
+                <interceptor-ref name="defaultStack" />
+                <interceptor-ref name="tokenSession">
+                    <param name="includeMethods">*</param>
+                </interceptor-ref>
+            </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="fkInterceptor" />
+        <default-action-ref name="Index" />
+        <global-results>
+            <result name="loginError">
+                login.jsp
+            </result>            
+            <result name="login">login.jsp</result>
+            <result name="invalid.token">token.html</result>
+            <result name="response" type="tiles">response.page</result>
+        </global-results>
+        <action name="logout" method="logout" class="com.viettel.action.Login">
+            <result name="login">login.jsp</result>
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>            
+        </action>
+        <action name="Login" class="com.viettel.action.Login" >
+            <interceptor-ref name="params"/>
+            <interceptor-ref name="validation">
+                <param name="validateAnnotatedMethodOnly">true</param>
+            </interceptor-ref>
+            <interceptor-ref name="workflow"/>            
+            <result name="input">login.jsp</result>
+            <result name="BaseIdentityForm" type="tiles">BaseIdentityForm.page</result>
+            <result name="success" type="tiles">home.page</result>
+            <result name="loginChangePass" type="tiles">loginChangePass.page</result>                       
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>
+            <result name="error" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>     
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">   
+                <param name="excludeMethods">*</param>                
+            </interceptor-ref>        
+        </action>       
+        <!--//////////////////////////////User////////////////////////////////////////-->        
+        <!--user-->
+        <action name="userManagerAction" method="prepareUserManager" class="com.viettel.action.UserManagerAction">
+            <result name="prepareUserManager" type="tiles">prepareUserManager.page</result>
+            <result name="UserManagerList" type="tiles">UserManagerList.page</result>
+            <result name="UserManagerDlg" type="tiles">UserManagerDlg.page</result>
+            <result name="preChangePassUser" type="tiles">preChangePassUser.page</result>                        
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>
+            <result name="error" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>    
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">
+                <param name="includeMethods">updateInsertUser,updateChangePass,deleteUser</param>
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>        
+        </action>
+        <action name="pagingUserManager" method="pagingUserManager" class="com.viettel.action.UserManagerAction">
+            <result name="UserManagerList"  type="tiles">UserManagerList.page</result>                        
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>     
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">                
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>       
+        </action>           
+        <!--End user-->         
+        
+        <!--ChangePassword-->
+        <action name="changePassAction" method="prepareChangePass" class="com.viettel.action.ChangePassAction">
+            <result name="prepareChangePass"  type="tiles">prepareChangePass.page</result>
+            <result name="ChangePassMsg"  type="tiles">ChangePassMsg.page</result>
+            <result name="input" type="tiles">input.page</result>                        
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>
+            <result name="error" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>    
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">
+                <param name="includeMethods">changePassword</param>
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>
+        </action>
+        <!--End ChangePassword -->
+        <!--//////////////////////////////CP////////////////////////////////////////-->          
+        <!--CP-->
+        
+        <!--##################### Fix download file ##########################-->
+                
+        <!--End CP-->    
+        <!--//////////////////////////////SERVICES////////////////////////////////////////-->          
+        <!--Services-->
+               
+        <!--End Services-->
+        
+        <!--//////////////////////////////SERVICES Language////////////////////////////////////////-->          
+        <!--Services Language-->
+                 
+        <!--End Services Language-->
+        <!--//////////////////////////////SUB_SERVICES////////////////////////////////////////-->          
+        <!--Sub_Services-->
+               
+        <!--End Sub_Services-->
+        <!--//////////////////////////////Mo_commands////////////////////////////////////////--> 
+        <!--Mo_commands-->
+           
+        <!--End Mo_commands-->
+       
+        <!-- Mo_MultiLanguage-->
+      
+               
+    
+        <!--end Mo_Multilanguage-->
+        
+   
+        <!--Ussd_command-->
+        
+        <!--End Ussd_command-->
+        
+
+        <!--Ussd configlanguage-->
+        
+        
+        <!--End Ussdconfiglanguage-->
+        
+        <!--Ivr_command-->
+        <action name="IvrCommandAction" method="prepareIvr_commandsManager" class="com.viettel.action.IvrCommandAction">
+            <result name="prepareIvr_commandsManager" type="tiles">prepareIvr_commandsManager.page</result>
+            <result name="Ivr_commandsManagerList" type="tiles">Ivr_commandsManagerList.page</result>
+            <result name="Ivr_commandsDiv" type="tiles">Ivr_commandsDiv.page</result>
+            <result name="Ivr_commandsManagerDlg" type="tiles">Ivr_commandsManagerDlg.page</result>                        
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>
+            <result name="error" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>   
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">
+                <param name="includeMethods">updateInsertIvr_commands,deleteIvr_commands</param>
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>         
+        </action>     
+        <action name="pagingIvr_commandsManager" method="pagingIvr_commandsManager" class="com.viettel.action.IvrCommandAction">
+            <result name="Ivr_commandsManagerList"  type="tiles">Ivr_commandsManagerList.page</result>                        
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>    
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>        
+        </action>    
+        <!--End Ivr_command-->
+        
+        
+        <!--Promotion_command-->
+        <action name="PromotionCommandAction" method="preparePromotion_commandsManager" class="com.viettel.action.PromotionCommandAction">
+            <result name="preparePromotion_commandsManager" type="tiles">preparePromotion_commandsManager.page</result>
+            <result name="Promotion_commandsManagerList" type="tiles">Promotion_commandsManagerList.page</result>
+            <result name="Promotion_commandsDiv" type="tiles">Promotion_commandsDiv.page</result>
+            <result name="Promotion_commandsManagerDlg" type="tiles">Promotion_commandsManagerDlg.page</result>                        
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>
+            <result name="error" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>   
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">
+                <param name="includeMethods">updateInsertPromotion_commands,deletePromotion_commands</param>
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>         
+        </action>     
+        <action name="pagingPromotion_commandsManager" method="pagingPromotion_commandsManager" class="com.viettel.action.PromotionCommandAction">
+            <result name="Promotion_commandsManagerList"  type="tiles">Promotion_commandsManagerList.page</result>                        
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>    
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>        
+        </action>    
+        <!--End Promotion_command-->
+        
+        <!--//////////////////////////////CP_webservice_accounts////////////////////////////////////////--> 
+        <!--CP_webservice_accounts-->
+               
+        <!--End CP_webservice_accounts-->
+        
+        <!--//////////////////////////////Commands////////////////////////////////////////--> 
+        <!--Commands-->
+                
+        <!--End Commands-->
+        <!--//////////////////////////////Service_mo_price////////////////////////////////////////--> 
+        <!--Service_mo_price-->
+              
+        <!--End Service_mo_price-->
+        <!--//////////////////////////////Service_category_price////////////////////////////////////////--> 
+        <!--Service_category_price-->
+              
+        <!--End Service_category_price-->
+        <!--//////////////////////////////Transactions////////////////////////////////////////--> 
+        <!--Transactions-->
+        <action name="TransactionsManagerAction" method="prepareTransactionsManager" class="com.viettel.action.TransactionsManagerAction">
+            <result name="prepareTransactionsManager" type="tiles">prepareTransactionsManager.page</result>
+            <result name="TransactionsDiv" type="tiles">TransactionsDiv.page</result>            
+            <result name="TransactionsManagerList" type="tiles">TransactionsManagerList.page</result>  
+            <result name="MO_MT_Dlg" type="tiles">MO_MT_Dlg.page</result>                 
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>
+            <result name="error" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>   
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>         
+        </action>
+        <action name="pagingTransactionsManager" method="pagingTransactionsManager" class="com.viettel.action.TransactionsManagerAction">
+            <result name="TransactionsManagerList"  type="tiles">TransactionsManagerList.page</result>                        
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>    
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>        
+        </action>       
+        <action name="downloadTransactionLog" class="com.viettel.action.DownloadTransactionLogDAO" method="downloadFile">
+            <result type="stream" name="download">
+                <!--<param name="contentType">application/octest-stream</param>-->
+                <param name="contentType">application/vnd.ms-excel</param>
+                <param name="inputName">inputStream</param>
+                <param name="bufferSize">8192</param>
+            </result>
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">                
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>   
+        </action>    
+        <!--End Transactions-->
+        
+        <!--//////////////////////////////ALL_MT////////////////////////////////////////--> 
+        <!--<ALL_MT>-->
+        <action name="MtAllAction" method="prepare" class="com.viettel.action.MtAllAction">
+            <result name="prepare" type="tiles">prepareMt_allManager.page</result>
+            <result name="mt_allDiv" type="tiles">mt_allDiv.page</result>
+            <result name="mt_allManagerList" type="tiles">mt_allManagerList.page</result>                   
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>
+            <result name="error" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>   
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>         
+        </action>
+        <action name="mt_allManagerAction" method="pagingMt_allManager" class="com.viettel.action.MtAllAction">
+            <result name="mt_allManagerList"  type="tiles">mt_allManagerList.page</result>                        
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>    
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">                
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>        
+        </action>   
+        <action name="download" class="com.viettel.action.DownloadDAO" method="downloadFile">
+            <result type="stream" name="download">
+                <!--<param name="contentType">application/octest-stream</param>-->
+                <param name="contentType">application/vnd.ms-excel</param>
+                <param name="inputName">inputStream</param>
+                <param name="bufferSize">8192</param>
+            </result>
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">                
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>   
+        </action>           
+        <!--End ALL_MT>-->
+        
+        <!--//////////////////////////////Transaction_MT////////////////////////////////////////--> 
+        <!--Transaction_MT-->
+                  
+        <!--End Transaction_MT-->
+        <!--//////////////////////////////Transaction_MO////////////////////////////////////////--> 
+        <!--Transaction_MO-->
+                  
+        <!--End Transaction_MO-->        
+        <!--//////////////////////////////Service_sub////////////////////////////////////////--> 
+        <!--Service_sub-->
+        <action name="Service_subManagerAction" method="prepareService_subManager" class="com.viettel.action.Service_subManagerAction">
+            <result name="prepareService_subManager" type="tiles">prepareService_subManager.page</result>
+            <result name="Service_subDiv" type="tiles">Service_subDiv.page</result>     
+            <result name="Service_sub_cancel_Dlg" type="tiles">Service_sub_cancel_Dlg.page</result>        
+            <result name="Service_subManagerList" type="tiles">Service_subManagerList.page</result>                   
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>
+            <result name="error" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>   
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">    
+                <!--<param name="includeMethods">Cancel_service_sub,Active_service_sub</param>-->            
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>         
+        </action>
+        <action name="pagingService_subManager" method="pagingService_subManager" class="com.viettel.action.Service_subManagerAction">
+            <result name="Service_subManagerList"  type="tiles">Service_subManagerList.page</result>                        
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>    
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">                
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>        
+        </action>  
+                 
+        <!--End Service_sub-->
+        <!--//////////////////////////////Users_services////////////////////////////////////////--> 
+        <!--Users_services-->
+                 
+        <!--End Users_services-->
+        <!--//////////////////////////////Stats_RevenueManager////////////////////////////////////////--> 
+        <!--Stats_RevenueManager-->
+                 
+        <!--End Stats_RevenueManager--> 
+        <!--//////////////////////////////Stats_DailyManager////////////////////////////////////////--> 
+        <!--Stats_DailyManager-->
+        <action name="Stats_DailyManagerAction" method="prepareStats_DailyManagerManager" class="com.viettel.action.Stats_DailyManagerAction">
+            <result name="prepareStats_DailyManager" type="tiles">prepareStats_DailyManager.page</result>
+            <result name="Stats_DailyDiv" type="tiles">Stats_DailyDiv.page</result>      
+            <result name="Stat_Daily_ServiceDiv" type="tiles">Stat_Daily_ServiceDiv.page</result>
+            <result name="Stats_DailyManagerList" type="tiles">Stats_DailyManagerList.page</result>                   
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>
+            <result name="error" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>   
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>         
+        </action>
+        <action name="pagingStats_DailyManager" method="pagingStats_DailyManager" class="com.viettel.action.Stats_DailyManagerAction">
+            <result name="Stats_DailyManagerList"  type="tiles">Stats_DailyManagerList.page</result>                        
+            <result name="sessionTimeout" >/WEB-INF/jsp/layout/sessionTimeout.jsp</result>    
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>        
+        </action>           
+        <action name="downloadRevenue" class="com.viettel.action.DownloadRevenueDAO" method="downloadFile">
+            <result type="stream" name="download">
+                <!--<param name="contentType">application/octest-stream</param>-->
+                <param name="contentType">application/vnd.ms-excel</param>
+                <param name="inputName">inputStream</param>
+                <param name="bufferSize">8192</param>
+            </result>
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="tokenSession">                
+                <param name="excludeMethods">*</param>
+            </interceptor-ref>   
+        </action>
+        <!--End Stats_DailyManager-->  
+        
+        <!--//////////////////////////////Stats_ErrorManager////////////////////////////////////////--> 
+        <!--Stats_ErrorManager-->
+                
+        <!--End Stats_ErrorManager-->    
+        <!--//////////////////////////////Stats_AccountsManager////////////////////////////////////////--> 
+        <!--Stats_AccountsManager-->
+               
+        <!--End Stats_AccountsManager-->  
+        <!--//////////////////////////////Stats_SubscribersManager////////////////////////////////////////--> 
+        <!--Stats_SubscribersManager-->
+                 
+        <!--End Stats_SubscribersManager--> 
+        <!--//////////////////////////////NEWSERVICES////////////////////////////////////////-->          
+        <!--NewServices-->
+          
+        <!--End NewServices-->
+        <!--//////////////////////////////sub_services_features////////////////////////////////////////-->          
+        <!--sub_services_features-->
+        
+        <!--Telsoft-->
+    </package>
+</struts>
+

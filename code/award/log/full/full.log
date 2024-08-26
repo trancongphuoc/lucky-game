@@ -1,0 +1,239 @@
+[INFO] 2022-03-19 23:18:18,835 com.nh.Start main - ======================================================================
+Developed by: ken
+======================================================================
+
+[INFO] 2022-03-19 23:18:18,838 com.nh.Start main - log home config: etc/config.properties
+[INFO] 2022-03-19 23:18:18,838 com.nh.Start main - log CONFIG_FILE: etc/config.properties
+[INFO] 2022-03-19 23:18:18,925 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2022-03-19 23:18:19,546 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2022-03-19 23:18:19,625 com.nh.database.DirectConnection init - DBThread Oracel-0Connecting to 'VAS_SUPERGOLO_2020'
+[INFO] 2022-03-19 23:18:26,786 com.nh.database.DirectConnection connectToOraServer - DBThread Oracel-0CONNECTED.
+[INFO] 2022-03-19 23:18:26,786 com.nh.database.DirectConnection init - DBThread Oracel-0CONNECTED.
+[INFO] 2022-03-19 23:18:26,797 com.nh.excutor.TaskManagement loadCommand - add command: * 23 * * * EMOLA
+[INFO] 2022-03-19 23:18:26,797 com.nh.excutor.TaskQueue getInstance - length of excutor: 1
+[INFO] 2022-03-19 23:18:26,815 com.nh.excutor.TaskQueue enqueue - enqueue queue(1): EMOLA
+[INFO] 2022-03-19 23:18:26,815 com.nh.excutor.TaskExcutor process - do job JOB_EMOLA now
+[INFO] 2022-03-19 23:18:26,867 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge5ttan197vx7rihaijg|45a51ac0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge5ttan197vx7rihaijg|45a51ac0, idleConnectionTestPeriod -> 30, initialPoolSize -> 2, jdbcUrl -> jdbc:oracle:thin:@localhost:8177/marketdg, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 45, maxPoolSize -> 5, maxStatements -> 1500, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> select 1 from dual, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 1, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO] 2022-03-19 23:18:52,515 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  874818916
+[INFO] 2022-03-19 23:19:19,078 com.nh.Start main - ======================================================================
+Developed by: ken
+======================================================================
+
+[INFO] 2022-03-19 23:19:19,082 com.nh.Start main - log home config: etc/config.properties
+[INFO] 2022-03-19 23:19:19,083 com.nh.Start main - log CONFIG_FILE: etc/config.properties
+[INFO] 2022-03-19 23:19:19,154 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2022-03-19 23:19:19,795 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2022-03-19 23:19:19,867 com.nh.database.DirectConnection init - DBThread Oracel-0Connecting to 'VAS_SUPERGOLO_2020'
+[INFO] 2022-03-19 23:19:27,282 com.nh.database.DirectConnection connectToOraServer - DBThread Oracel-0CONNECTED.
+[INFO] 2022-03-19 23:19:27,283 com.nh.database.DirectConnection init - DBThread Oracel-0CONNECTED.
+[INFO] 2022-03-19 23:19:27,286 com.nh.excutor.TaskManagement loadCommand - add command: * 23 * * * EMOLA
+[INFO] 2022-03-19 23:19:27,288 com.nh.excutor.TaskQueue getInstance - length of excutor: 1
+[INFO] 2022-03-19 23:19:27,293 com.nh.excutor.TaskQueue enqueue - enqueue queue(1): EMOLA
+[INFO] 2022-03-19 23:19:27,294 com.nh.excutor.TaskExcutor process - do job JOB_EMOLA now
+[INFO] 2022-03-19 23:19:27,350 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge5ttan197x7oc1itdow3|e381d2b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge5ttan197x7oc1itdow3|e381d2b, idleConnectionTestPeriod -> 30, initialPoolSize -> 2, jdbcUrl -> jdbc:oracle:thin:@localhost:8177/marketdg, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 45, maxPoolSize -> 5, maxStatements -> 1500, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> select 1 from dual, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 1, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO] 2022-03-19 23:19:38,987 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  874818916
+[INFO] 2022-03-19 23:19:38,987 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  865841530
+[INFO] 2022-03-19 23:19:38,987 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  876222412
+[INFO] 2022-03-19 23:19:51,817 com.nh.excutor.TaskExcutor processEmola - call via emola: ,msisdn:  872032111
+[INFO] 2022-03-19 23:20:00,997 com.nh.excutor.TaskExcutor callEMola - Begin call callEMola...
+[INFO] 2022-03-19 23:20:01,004 com.nh.excutor.TaskExcutor callEMola - url: http://localhost:7885/VASCPWebservice?wsdl
+[INFO] 2022-03-19 23:20:01,004 com.nh.excutor.TaskExcutor callEMola - ----xmlInput: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.wsfw.vas.viettel.com/">
+<soapenv:Header/>
+<soapenv:Body>
+<ser:payPrizeForWinner>
+<msisdn>258872032111</msisdn>
+<prizeCode>DAY1000</prizeCode>
+<staffCode>movitel</staffCode>
+<partnerCode>SUPERGOLO</partnerCode>
+<key>29eee322ac76f9f7f48f4414e7efbf339e43601d9576e97f</key>
+</ser:payPrizeForWinner>
+</soapenv:Body>
+</soapenv:Envelope>
+[INFO] 2022-03-19 23:20:03,667 com.nh.excutor.TaskExcutor callEMola - ----xmlOut: <?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:payPrizeForWinnerResponse xmlns:ns2="http://services.wsfw.vas.viettel.com/"><return><errorCode>01</errorCode><message>Transaction unsuccessfully.</message></return></ns2:payPrizeForWinnerResponse></S:Body></S:Envelope>
+[INFO] 2022-03-19 23:20:03,667 com.nh.excutor.TaskExcutor callEMola - call Emola '258872032111' -> 01 (2663 ms)
+[INFO] 2022-03-19 23:20:03,667 com.nh.excutor.TaskExcutor processEmola - paid error: DAY1000,msisdn:  872032111 => status: ERROR PAID
+[INFO] 2022-03-19 23:20:07,556 com.nh.excutor.TaskExcutor processEmola - TaskExcutor-0-end doAward : 872032111 => status: 01,duration (ms):28569
+[INFO] 2022-03-19 23:20:07,565 com.nh.proccess.InsertCdrProcess enqueue - enqueue cdr: (1):872032111|SUPERGOLO| response: 01|price: 0.0|null| cmd: DAY1000
+[INFO] 2022-03-19 23:20:07,566 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  878280108
+[INFO] 2022-03-19 23:20:07,567 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  860219500
+[INFO] 2022-03-19 23:20:07,567 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  876109393
+[INFO] 2022-03-19 23:20:07,567 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  860450095
+[INFO] 2022-03-19 23:20:07,567 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  874481278
+[INFO] 2022-03-19 23:20:07,567 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  872265095
+[INFO] 2022-03-19 23:20:07,567 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  878835484
+[INFO] 2022-03-19 23:20:07,567 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  873286631
+[INFO] 2022-03-19 23:20:07,567 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  864497823
+[INFO] 2022-03-19 23:20:07,567 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  876559428
+[INFO] 2022-03-19 23:20:07,567 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  866298048
+[INFO] 2022-03-19 23:20:07,567 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  869267529
+[INFO] 2022-03-19 23:20:07,567 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  861423261
+[INFO] 2022-03-19 23:20:07,567 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  878265250
+[INFO] 2022-03-19 23:20:07,567 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  864244118
+[INFO] 2022-03-19 23:20:07,567 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  875606320
+[INFO] 2022-03-19 23:20:07,569 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  860186595
+[INFO] 2022-03-19 23:20:07,570 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  877958061
+[INFO] 2022-03-19 23:20:07,570 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  867060141
+[INFO] 2022-03-19 23:20:07,570 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  861581537
+[INFO] 2022-03-19 23:20:07,570 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  869433554
+[INFO] 2022-03-19 23:20:07,571 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  876628289
+[INFO] 2022-03-19 23:20:07,571 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  866043576
+[INFO] 2022-03-19 23:20:07,571 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  879467740
+[INFO] 2022-03-19 23:20:07,571 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  869114693
+[INFO] 2022-03-19 23:20:07,571 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  862090891
+[INFO] 2022-03-19 23:20:07,571 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  864451499
+[INFO] 2022-03-19 23:20:07,571 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  874035668
+[INFO] 2022-03-19 23:20:07,571 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  867508475
+[INFO] 2022-03-19 23:20:07,572 com.nh.excutor.TaskExcutor processEmola - TaskExcutor-0-end run: weekly, duration (ms):28585
+[INFO] 2022-03-19 23:20:10,015 com.nh.proccess.InsertCdrProcess process - cdr processed batch size: 1
+[INFO] 2022-03-19 23:20:15,025 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:20:20,045 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:20:25,055 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:20:30,070 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:20:35,072 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:20:40,076 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:20:45,085 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:20:50,095 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:20:55,105 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:21:00,117 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:21:05,125 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:21:10,145 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:21:15,155 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:21:20,176 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:21:25,191 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:21:30,195 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:21:35,195 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:21:40,205 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:21:45,215 com.nh.proccess.InsertCdrProcess run - cdr process no data sleep(s): 5
+[INFO] 2022-03-19 23:22:52,630 com.nh.Start main - ======================================================================
+Developed by: ken
+======================================================================
+
+[INFO] 2022-03-19 23:22:52,635 com.nh.Start main - log home config: etc/config.properties
+[INFO] 2022-03-19 23:22:52,635 com.nh.Start main - log CONFIG_FILE: etc/config.properties
+[INFO] 2022-03-19 23:22:52,675 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2022-03-19 23:22:53,276 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2022-03-19 23:22:53,337 com.nh.database.DirectConnection init - DBThread Oracel-0Connecting to 'VAS_SUPERGOLO_2020'
+[INFO] 2022-03-19 23:22:59,818 com.nh.database.DirectConnection connectToOraServer - DBThread Oracel-0CONNECTED.
+[INFO] 2022-03-19 23:22:59,818 com.nh.database.DirectConnection init - DBThread Oracel-0CONNECTED.
+[INFO] 2022-03-19 23:22:59,826 com.nh.excutor.TaskManagement loadCommand - add command: * 23 * * * EMOLA
+[INFO] 2022-03-19 23:22:59,828 com.nh.excutor.TaskQueue getInstance - length of excutor: 1
+[INFO] 2022-03-19 23:22:59,837 com.nh.excutor.TaskQueue enqueue - enqueue queue(1): EMOLA
+[INFO] 2022-03-19 23:22:59,837 com.nh.excutor.TaskExcutor process - do job JOB_EMOLA now
+[INFO] 2022-03-19 23:22:59,896 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge5ttan1981sfc6s6xm4|48e472f8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge5ttan1981sfc6s6xm4|48e472f8, idleConnectionTestPeriod -> 30, initialPoolSize -> 2, jdbcUrl -> jdbc:oracle:thin:@localhost:8177/marketdg, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 45, maxPoolSize -> 5, maxStatements -> 1500, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> select 1 from dual, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 1, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  865841530
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  874818916
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  876222412
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  878280108
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  860219500
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  876109393
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  860450095
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  872265095
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  874481278
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  878835484
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  873286631
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  864497823
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  876559428
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  866298048
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  869267529
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  861423261
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  864244118
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  878265250
+[INFO] 2022-03-19 23:23:12,178 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  877958061
+[INFO] 2022-03-19 23:23:12,182 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  860186595
+[INFO] 2022-03-19 23:23:12,182 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  875606320
+[INFO] 2022-03-19 23:23:12,182 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  861581537
+[INFO] 2022-03-19 23:23:12,182 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  867060141
+[INFO] 2022-03-19 23:23:12,182 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  866043576
+[INFO] 2022-03-19 23:23:12,182 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  879467740
+[INFO] 2022-03-19 23:23:12,182 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  869433554
+[INFO] 2022-03-19 23:23:12,182 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  876628289
+[INFO] 2022-03-19 23:23:12,182 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  869114693
+[INFO] 2022-03-19 23:23:12,182 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  862090891
+[INFO] 2022-03-19 23:23:12,182 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  864451499
+[INFO] 2022-03-19 23:23:12,182 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  874035668
+[INFO] 2022-03-19 23:23:12,182 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  867508475
+[INFO] 2022-03-19 23:23:12,182 com.nh.excutor.TaskExcutor processEmola - TaskExcutor-0-end run: emola, duration (ms):4
+[INFO] 2022-03-19 23:23:35,706 com.nh.Start main - ======================================================================
+Developed by: ken
+======================================================================
+
+[INFO] 2022-03-19 23:23:35,706 com.nh.Start main - log home config: etc/config.properties
+[INFO] 2022-03-19 23:23:35,706 com.nh.Start main - log CONFIG_FILE: etc/config.properties
+[INFO] 2022-03-19 23:23:35,759 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2022-03-19 23:23:36,348 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2022-03-19 23:23:36,415 com.nh.database.DirectConnection init - DBThread Oracel-0Connecting to 'VAS_SUPERGOLO_2020'
+[INFO] 2022-03-19 23:23:43,138 com.nh.database.DirectConnection connectToOraServer - DBThread Oracel-0CONNECTED.
+[INFO] 2022-03-19 23:23:43,138 com.nh.database.DirectConnection init - DBThread Oracel-0CONNECTED.
+[INFO] 2022-03-19 23:23:43,145 com.nh.excutor.TaskManagement loadCommand - add command: * 23 * * * EMOLA
+[INFO] 2022-03-19 23:23:43,155 com.nh.excutor.TaskQueue getInstance - length of excutor: 1
+[INFO] 2022-03-19 23:23:43,157 com.nh.excutor.TaskQueue enqueue - enqueue queue(1): EMOLA
+[INFO] 2022-03-19 23:23:43,157 com.nh.excutor.TaskExcutor process - do job JOB_EMOLA now
+[INFO] 2022-03-19 23:23:43,215 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge5ttan1982po710sw0dm|45a51ac0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge5ttan1982po710sw0dm|45a51ac0, idleConnectionTestPeriod -> 30, initialPoolSize -> 2, jdbcUrl -> jdbc:oracle:thin:@localhost:8177/marketdg, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 45, maxPoolSize -> 5, maxStatements -> 1500, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> select 1 from dual, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 1, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO] 2022-03-19 23:23:55,207 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  874818916
+[INFO] 2022-03-19 23:23:55,207 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  865841530
+[INFO] 2022-03-19 23:23:55,207 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  876222412
+[INFO] 2022-03-19 23:24:06,345 com.nh.excutor.TaskExcutor processEmola - call via emola: ,msisdn:  872032111
+[INFO] 2022-03-19 23:24:07,196 com.nh.excutor.TaskExcutor callEMola - Begin call callEMola...
+[INFO] 2022-03-19 23:24:07,196 com.nh.excutor.TaskExcutor callEMola - url: http://localhost:9085/VASCPWebservice?wsdl
+[INFO] 2022-03-19 23:24:07,205 com.nh.excutor.TaskExcutor callEMola - ----xmlInput: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.wsfw.vas.viettel.com/">
+<soapenv:Header/>
+<soapenv:Body>
+<ser:payPrizeForWinner>
+<msisdn>258872032111</msisdn>
+<prizeCode>DAY1000</prizeCode>
+<staffCode>movitel</staffCode>
+<partnerCode>SUPERGOLO</partnerCode>
+<key>29eee322ac76f9f7f48f4414e7efbf339e43601d9576e97f</key>
+</ser:payPrizeForWinner>
+</soapenv:Body>
+</soapenv:Envelope>
+[INFO] 2022-03-19 23:24:09,376 com.nh.excutor.TaskExcutor callEMola - ----xmlOut: <?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:payPrizeForWinnerResponse xmlns:ns2="http://services.wsfw.vas.viettel.com/"><return><errorCode>01</errorCode><message>Transaction unsuccessfully.</message></return></ns2:payPrizeForWinnerResponse></S:Body></S:Envelope>
+[INFO] 2022-03-19 23:24:09,388 com.nh.excutor.TaskExcutor callEMola - call Emola '258872032111' -> 01 (2192 ms)
+[INFO] 2022-03-19 23:26:43,237 com.nh.excutor.TaskExcutor processEmola - paid error: DAY1000,msisdn:  872032111 => status: ERROR PAID
+[INFO] 2022-03-19 23:26:47,257 com.nh.excutor.TaskExcutor processEmola - TaskExcutor-0-end doAward : 872032111 => status: 01,duration (ms):172050
+[INFO] 2022-03-19 23:29:53,822 com.nh.Start main - ======================================================================
+Developed by: ken
+======================================================================
+
+[INFO] 2022-03-19 23:29:53,826 com.nh.Start main - log home config: etc/config.properties
+[INFO] 2022-03-19 23:29:53,826 com.nh.Start main - log CONFIG_FILE: etc/config.properties
+[INFO] 2022-03-19 23:29:53,867 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2022-03-19 23:29:54,406 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2022-03-19 23:29:54,477 com.nh.database.DirectConnection init - DBThread Oracel-0Connecting to 'VAS_SUPERGOLO_2020'
+[INFO] 2022-03-19 23:30:02,245 com.nh.database.DirectConnection connectToOraServer - DBThread Oracel-0CONNECTED.
+[INFO] 2022-03-19 23:30:02,245 com.nh.database.DirectConnection init - DBThread Oracel-0CONNECTED.
+[INFO] 2022-03-19 23:30:02,251 com.nh.excutor.TaskManagement loadCommand - add command: * 23 * * * EMOLA
+[INFO] 2022-03-19 23:30:02,257 com.nh.excutor.TaskQueue getInstance - length of excutor: 1
+[INFO] 2022-03-19 23:30:02,266 com.nh.excutor.TaskQueue enqueue - enqueue queue(1): EMOLA
+[INFO] 2022-03-19 23:30:02,266 com.nh.excutor.TaskExcutor process - do job JOB_EMOLA now
+[INFO] 2022-03-19 23:30:02,317 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge5ttan198atf8wnkvv8|2d40037d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge5ttan198atf8wnkvv8|2d40037d, idleConnectionTestPeriod -> 30, initialPoolSize -> 2, jdbcUrl -> jdbc:oracle:thin:@localhost:8177/marketdg, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 45, maxPoolSize -> 5, maxStatements -> 1500, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> select 1 from dual, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 1, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO] 2022-03-19 23:30:22,673 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  874818916
+[INFO] 2022-03-19 23:30:22,675 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  865841530
+[INFO] 2022-03-19 23:30:22,675 com.nh.excutor.TaskExcutor processEmola - not in white list: ,msisdn:  876222412
+[INFO] 2022-03-19 23:30:27,407 com.nh.excutor.TaskExcutor processEmola - call via emola: ,msisdn:  872032111
+[INFO] 2022-03-19 23:30:28,068 com.nh.excutor.TaskExcutor callEMola - Begin call callEMola...
+[INFO] 2022-03-19 23:30:28,068 com.nh.excutor.TaskExcutor callEMola - url: http://localhost:7986/VASCPWebservice?wsdl
+[INFO] 2022-03-19 23:30:28,068 com.nh.excutor.TaskExcutor callEMola - ----xmlInput: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.wsfw.vas.viettel.com/">
+<soapenv:Header/>
+<soapenv:Body>
+<ser:payPrizeForWinner>
+<msisdn>258872032111</msisdn>
+<prizeCode>DAY1000</prizeCode>
+<staffCode>movitel</staffCode>
+<partnerCode>SUPERGOLO</partnerCode>
+<key>29eee322ac76f9f7f48f4414e7efbf339e43601d9576e97f</key>
+</ser:payPrizeForWinner>
+</soapenv:Body>
+</soapenv:Envelope>
+[ERROR] 2022-03-19 23:30:58,106 com.nh.util.CallWS callWS - java.net.SocketTimeoutException: Read timed out
+[INFO] 2022-03-19 23:30:58,108 com.nh.excutor.TaskExcutor callEMola - ----xmlOut: 
+[ERROR] 2022-03-19 23:30:58,136 com.nh.excutor.TaskExcutor callEMola - org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file. erorr pay emola for 258872032111
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:257)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121)
+	at com.nh.excutor.TaskExcutor.callEMola(TaskExcutor.java:482)
+	at com.nh.excutor.TaskExcutor.processEmola(TaskExcutor.java:281)
+	at com.nh.excutor.TaskExcutor.process(TaskExcutor.java:122)
+	at com.nh.excutor.TaskExcutor.run(TaskExcutor.java:95)
+	at java.lang.Thread.run(Thread.java:745)

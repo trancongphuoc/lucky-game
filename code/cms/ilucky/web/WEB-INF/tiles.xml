@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+    
+    <definition name="base.definition" template="/WEB-INF/jsp/layout/baseLayout.jsp" >
+        <put-attribute name="title"  value=""/>
+        <put-attribute name="borderTop" value="/WEB-INF/jsp/layout/borderTop.jsp"/>
+        <put-attribute name="body"   value="/WEB-INF/jsp/layout/body.jsp"/>
+    </definition>
+
+    <definition name="bodyLayout.definition" template="/WEB-INF/jsp/layout/bodyLayout.jsp">
+        <put-attribute name="body" value="/WEB-INF/jsp/layout/body.jsp"/>
+    </definition>
+
+    <definition name="popupLayout.definition" template="/WEB-INF/jsp/layout/popupLayout.jsp">
+        <put-attribute name="body" value=""/>
+    </definition>
+
+    <definition name="content.definition" template="/WEB-INF/jsp/layout/content.jsp">
+        <put-attribute name="body"   value=""/>
+    </definition>
+
+    <definition name="home.page" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/homepageTest.jsp" />
+    </definition>
+    <definition name="response.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/layout/respondMessage.jsp" />
+    </definition>
+    <!--///////////////////////////////////////////User/////////////////////////////////////////-->
+    <!--User-->
+    <definition name="prepareUserManager.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/userManager/UserManager.jsp" />
+    </definition>
+    <definition name="prepareUser.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/userManager/UserManager.jsp" />
+    </definition>
+    <definition name="preChangePassUser.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/userManager/UserChangePassDlg.jsp" />
+    </definition>
+    <definition name="UserManagerList.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/userManager/UserManagerList.jsp" />
+    </definition>
+    <definition name="UserManagerDlg.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/userManager/UserManagerDlg.jsp" />
+    </definition>
+    <!--end user-->
+        
+    <!--Change Pass-->
+    <definition name="prepareChangePass.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/user/ChangePass.jsp" />
+    </definition>     
+    <definition name="input.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/user/ChangePass.jsp" />
+    </definition>     
+    <definition name="ChangePassMsg.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/user/ChangePassMsg.jsp" />
+    </definition>    
+    <definition name="loginChangePass.page" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/user/ChangePass.jsp" />
+    </definition>  
+    <!--End Change Pass-->     
+    
+ <!--///////////////////////////////////////////CP/////////////////////////////////////////-->
+    <!--CP-->
+    
+    
+    <!--end CP-->    
+    <!--///////////////////////////////////////Services/////////////////////////////////////////////-->
+    <!--Services-->
+    
+    <!--end Services-->
+    <!--///////////////////////////////////////Services Language/////////////////////////////////////////////-->
+    <!--ServicesLanguage-->
+ 
+    <!--end ServicesLanguage-->
+    
+    <!--///////////////////////////////////Subservices///////////////////////////////////////////-->
+    <!--SubServices-->
+    
+    <!--end SubServices-->
+    <!--///////////////////////////////////////Mo_commands/////////////////////////////////////////////-->
+    <!--Mo_commands-->
+    
+    <!--end Mo_commands-->
+    
+    <!-- Mo_MultiLanguage-->
+    
+    <!--end Mo_Multilanguage-->
+    
+    
+    
+    
+    
+    <!--///////////////////////////////////////CP_webservice_accounts/////////////////////////////////////////////-->
+        <!--///////////////////////////////////////Ussd_commands/////////////////////////////////////////////-->
+    <!--Ussd_commands-->
+    <!--end Ussd_commands-->
+    
+    
+     <!--Ussd_config_language-->
+    <!--end Ussd_config_language-->
+    
+    
+    
+    
+    <!--Ivr_commands-->
+    <definition name="prepareIvr_commandsManager.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/ivr_commands/Ivr_commandsManager.jsp" />
+    </definition>
+    <definition name="prepareIvr_commands.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/ivr_commands/Ivr_commandsManager.jsp" />
+    </definition>    
+    <definition name="Ivr_commandsManagerList.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/ivr_commands/Ivr_commandsManagerList.jsp" />
+    </definition>
+    <definition name="Ivr_commandsDiv.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/ivr_commands/Ivr_commands.jsp" />
+    </definition>
+    <definition name="Ivr_commandsManagerDlg.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/ivr_commands/Ivr_commandsManagerDlg.jsp" />
+    </definition>
+    <!--end Ivr_commands-->
+    
+    
+        <!--promotion_commands-->
+    <definition name="preparePromotion_commandsManager.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/promotion_commands/Promotion_commandsManager.jsp" />
+    </definition>
+    <definition name="preparePromotion_commands.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/promotion_commands/Promotion_commandsManager.jsp" />
+    </definition>    
+    <definition name="Promotion_commandsManagerList.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/promotion_commands/Promotion_commandsManagerList.jsp" />
+    </definition>
+    <definition name="Promotion_commandsDiv.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/promotion_commands/Promotion_commands.jsp" />
+    </definition>
+    <definition name="Promotion_commandsManagerDlg.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/promotion_commands/Promotion_commandsManagerDlg.jsp" />
+    </definition>
+    <!--end promotion_commands-->
+    
+    <!--///////////////////////////////////////CP_webservice_accounts/////////////////////////////////////////////-->
+    <!--CP_webservice_accounts-->
+    <!--end CP_webservice_account-->
+    <!--///////////////////////////////////////Commands/////////////////////////////////////////////-->
+    <!--Commands-->
+    <!--end CP_webservice_account-->
+    <!--///////////////////////////////////////Service_mo_price/////////////////////////////////////////////-->
+    <!--Service_mo_price-->
+    <!--end Service_mo_price-->
+    <!--///////////////////////////////////////Service_category_price/////////////////////////////////////////////-->
+    <!--Service_category_price-->
+    <!--end Service_category_price-->
+    <!--///////////////////////////////////////Transactions/////////////////////////////////////////////-->
+    <!--Transactions-->
+    <definition name="prepareTransactionsManager.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/Transactions/TransactionsManager.jsp" />
+    </definition>
+    <definition name="TransactionsDiv.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/Transactions/Transactions.jsp" />
+    </definition>
+    <definition name="prepareTransactions.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/Transactions/TransactionsManager.jsp" />
+    </definition>    
+    <definition name="TransactionsManagerList.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/Transactions/TransactionsManagerList.jsp" />
+    </definition>    
+    <definition name="MO_MT_Dlg.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/Transactions/MO_MT_Dlg.jsp" />
+    </definition>    
+    <!--end Transactions-->
+    
+     <!--///////////////////////////////////////ALL_MT/////////////////////////////////////////////-->
+    <!--  ALL_MT -->
+    <definition name="prepareMt_allManager.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/mt_all/mt_allManager.jsp" />
+    </definition>
+    <definition name="mt_allDiv.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/mt_all/mt_all.jsp" />
+    </definition>
+    <definition name="preparemt_all.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/mt_all/mt_allManager.jsp" />
+    </definition>    
+    <definition name="mt_allManagerList.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/mt_all/mt_allManagerList.jsp" />
+    </definition>    
+    <!--end ALL_MT-->
+    <!--///////////////////////////////////////Transaction_MT/////////////////////////////////////////////-->
+    <!--Transaction_MT-->
+    <!--end Transaction_MT-->
+    <!--///////////////////////////////////////Transaction_MO/////////////////////////////////////////////-->
+    <!--Transaction_MO-->
+    <!--end Transaction_MO-->
+    <!--///////////////////////////////////////Service_sub/////////////////////////////////////////////-->
+    <!--Service_sub-->
+    <definition name="prepareService_subManager.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/Service_sub/Service_subManager.jsp" />
+    </definition>
+    <definition name="Service_subDiv.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/Service_sub/Service_sub.jsp" />
+    </definition>
+    <definition name="Service_sub_cancel_Dlg.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/Service_sub/Service_sub_cancel.jsp" />
+    </definition>
+    <definition name="prepareService_sub.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/Service_sub/Service_subManager.jsp" />
+    </definition>    
+    <definition name="Service_subManagerList.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/Service_sub/Service_subManagerList.jsp" />
+    </definition>  
+    <!--end Service_sub-->
+    <!--///////////////////////////////////////Users_services/////////////////////////////////////////////-->
+    <!--Users_services-->
+    <definition name="prepareUsers_servicesManager.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/Users_services/Users_servicesManager.jsp" />
+    </definition>
+    <definition name="prepareUsers_services.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/Users_services/Users_servicesManager.jsp" />
+    </definition>    
+    <definition name="Users_servicesManagerList.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/Users_services/Users_servicesManagerList.jsp" />
+    </definition>    
+    <!--end Users_services-->    
+    <!--///////////////////////////////////////Stats_Revenue/////////////////////////////////////////////-->
+    <!--Stats_Revenue-->
+    <!--end Stats_Revenue-->
+    
+    <!--///////////////////////////////////////Stats_Daily/////////////////////////////////////////////-->
+    <!--Stats_Daily-->
+    <definition name="prepareStats_DailyManager.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/stats_daily/Stats_DailyManager.jsp" />
+    </definition>
+    <definition name="Stats_DailyDiv.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/stats_daily/Stats_Daily_Sub_Service.jsp" />
+    </definition>    
+    <definition name="prepareStats_DailyManager.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/stats_daily/Stats_DailyManager.jsp" />
+    </definition> 
+    <definition name="Stat_Daily_ServiceDiv.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/stats_daily/Stats_Daily_Service.jsp" />
+    </definition>   
+    <definition name="Stats_DailyManagerList.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/stats_daily/Stats_DailyManagerList.jsp" />
+    </definition>    
+    <!--end Stats_Daily-->
+    
+    <!--///////////////////////////////////////Stats_Error/////////////////////////////////////////////-->
+    <!--Stats_Error-->
+    <!--end Stats_Error-->
+    
+     <!--///////////////////////////////////////Stats_Accounts/////////////////////////////////////////////-->
+    <!--Stats_Accounts-->
+    <!--end Stats_Accounts-->
+     <!--///////////////////////////////////////Stats_Subscribers/////////////////////////////////////////////-->
+    <!--Stats_Subscribers-->
+    <!--end Stats_Subscribers-->
+    <!--///////////////////////////////////////NewServices/////////////////////////////////////////////-->
+    <!--NewServices-->
+<!--    <definition name="Sub_ServicesDiv.page" extends="content.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/app/NewServices/Sub_Services.jsp" />
+    </definition>-->
+    <!--end NewServices-->
+    <!--///////////////////////////////////sub_services_features///////////////////////////////////////////-->
+    <!--sub_services_features-->
+
+   
+    <!--end SMPP-->
+    <!--Telsoft-->
+</tiles-definitions>

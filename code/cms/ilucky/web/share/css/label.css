@@ -1,0 +1,137 @@
+/*.btn{
+    background:transparent url("../images/buttons/button_sx_bg.gif") no-repeat scroll top right;
+    color: #444;
+    display:block;
+    float:left;
+    font:normal 12px arial, sans-serif;
+    height:24px;
+    margin-right:6px;
+    padding-right:18px;
+    text-decoration:none;
+    }
+.btn.hover{
+    background:transparent url("../images/buttons/button_sx_bg.gif") no-repeat scroll top right ;
+}*/
+.alert {
+    margin:2px;
+    border:1px solid #fcd28c;
+
+    background:url( ../images/me_alert.gif ) repeat-x top;
+    background-color:#fcf2dc;
+    margin-right: 10px;
+}
+.alert .inner {
+    margin:0px;
+    padding:8px;
+    padding-left:30px;
+    font-size:11px;
+    color:#000;
+    background:url( ../images/alert.png ) no-repeat 0px 4px;
+    min-height:40px;
+}
+div.label{
+    font-weight:bold;
+    font-family: tahoma,helvetica,arial,verdana;
+    font-size: 13px;
+    text-align: left;
+
+   /* background:url( ../images/grid3-hrow.gif ) repeat-x bottom;*/    
+    color: #15428b;/*#212741;*/
+    border-bottom: 0px solid #aaccf6;
+    border-left: 0px solid #fff;
+    border-width:0px;
+    padding-left:2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+* html .alert .inner{
+    height:53px;
+}
+.warning {
+    margin:2px;
+    border:1px solid #fc9eac;
+
+    background:url( ../images/me_warning.gif ) repeat-x top;
+    background-color:#fce2e4;
+}
+
+.warning .inner {
+    margin:0px;
+    padding:8px;
+    padding-left:50px;
+
+    font-size:11px;
+    color:#000;
+
+    background:url( ../images/warning.png ) no-repeat 2px 6px;
+
+    min-height:40px;
+}
+
+* html .warning .inner{
+    height:53px;
+}
+.warning div.shortcut
+{
+    display:none;
+}
+
+.message div.icon,
+.notice div.icon,
+.alert div.icon,
+.warning div.icon
+{
+    float:right;
+
+    margin-top:5px;
+    margin-right:5px;
+
+    height:10px;
+    width:9px;
+
+    background:url( ../images/buttons/close_msg2.png ) no-repeat 0px 0px;
+}
+
+
+.info {
+    margin:2px;
+    border:0px solid #fc9eac;
+
+    background:url( ../images/grid3-hrow1.gif ) repeat-x top;
+    background-color:#fce2e5;
+}
+.info div.icon{
+    float:right;
+
+    margin-top:5px;
+    margin-right:5px;
+
+    height:10px;
+    width:9px;
+
+    background:url( ../images/notice-info.png) no-repeat 0px 0px;
+
+}
+
+.info div.inner{
+   margin:0px;
+    padding:6px;
+    padding-left:50px;
+	font-weight: bold;
+	color:red;
+    font-size:13px;
+    
+    background:url( ../images/notice-info.png ) no-repeat 2px 1px;
+
+    min-height:10px;
+
+}
+* html .message div.icon,
+* html .notice div.icon,
+* html .alert div.icon,
+* html .warning div.icon
+{
+    margin-top:5px;
+    margin-right:3px;
+}
+

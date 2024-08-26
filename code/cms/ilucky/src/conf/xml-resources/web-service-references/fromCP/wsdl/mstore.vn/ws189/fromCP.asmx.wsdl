@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsertCP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CPCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RequestID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiverID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CommandCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContentType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertCPResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertMT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CPCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RequestID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiverID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CommandCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContentType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertMTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertMTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSCP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CPCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CommandCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContentType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSCPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertSCPResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSMT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CPCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CommandCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContentType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSMTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertSMTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestMT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CPCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RequestID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiverID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CommandCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContentType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestMTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestMTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestSMT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CPCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CommandCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContentType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestSMTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestSMTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertCPSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertCP" />
+  </wsdl:message>
+  <wsdl:message name="InsertCPSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertCPResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertMTSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertMT" />
+  </wsdl:message>
+  <wsdl:message name="InsertMTSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertMTResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertSCPSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertSCP" />
+  </wsdl:message>
+  <wsdl:message name="InsertSCPSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertSCPResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertSMTSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertSMT" />
+  </wsdl:message>
+  <wsdl:message name="InsertSMTSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertSMTResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestMTSoapIn">
+    <wsdl:part name="parameters" element="tns:TestMT" />
+  </wsdl:message>
+  <wsdl:message name="TestMTSoapOut">
+    <wsdl:part name="parameters" element="tns:TestMTResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestSMTSoapIn">
+    <wsdl:part name="parameters" element="tns:TestSMT" />
+  </wsdl:message>
+  <wsdl:message name="TestSMTSoapOut">
+    <wsdl:part name="parameters" element="tns:TestSMTResponse" />
+  </wsdl:message>
+  <wsdl:portType name="sendMTSoap">
+    <wsdl:operation name="InsertCP">
+      <wsdl:input message="tns:InsertCPSoapIn" />
+      <wsdl:output message="tns:InsertCPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertMT">
+      <wsdl:input message="tns:InsertMTSoapIn" />
+      <wsdl:output message="tns:InsertMTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSCP">
+      <wsdl:input message="tns:InsertSCPSoapIn" />
+      <wsdl:output message="tns:InsertSCPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSMT">
+      <wsdl:input message="tns:InsertSMTSoapIn" />
+      <wsdl:output message="tns:InsertSMTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestMT">
+      <wsdl:input message="tns:TestMTSoapIn" />
+      <wsdl:output message="tns:TestMTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestSMT">
+      <wsdl:input message="tns:TestSMTSoapIn" />
+      <wsdl:output message="tns:TestSMTSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="sendMTSoap" type="tns:sendMTSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertCP">
+      <soap:operation soapAction="http://tempuri.org/InsertCP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMT">
+      <soap:operation soapAction="http://tempuri.org/InsertMT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSCP">
+      <soap:operation soapAction="http://tempuri.org/InsertSCP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSMT">
+      <soap:operation soapAction="http://tempuri.org/InsertSMT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestMT">
+      <soap:operation soapAction="http://tempuri.org/TestMT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestSMT">
+      <soap:operation soapAction="http://tempuri.org/TestSMT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="sendMTSoap12" type="tns:sendMTSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertCP">
+      <soap12:operation soapAction="http://tempuri.org/InsertCP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMT">
+      <soap12:operation soapAction="http://tempuri.org/InsertMT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSCP">
+      <soap12:operation soapAction="http://tempuri.org/InsertSCP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSMT">
+      <soap12:operation soapAction="http://tempuri.org/InsertSMT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestMT">
+      <soap12:operation soapAction="http://tempuri.org/TestMT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestSMT">
+      <soap12:operation soapAction="http://tempuri.org/TestSMT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="sendMT">
+    <wsdl:port name="sendMTSoap" binding="tns:sendMTSoap">
+      <soap:address location="http://mstore.vn/ws189/fromCP.asmx" />
+    </wsdl:port>
+    <wsdl:port name="sendMTSoap12" binding="tns:sendMTSoap12">
+      <soap12:address location="http://mstore.vn/ws189/fromCP.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

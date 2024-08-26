@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender name="ConsoleAppender" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{ABSOLUTE} %p -%m%n"/>
+        </layout>
+    </appender>
+    <appender name="Dao" class="org.apache.log4j.DailyRollingFileAppender"> 
+        <param name="file" value="..\log\full.log"/>
+        <param name="datePattern" value="'.'yyyy-MM-dd" />
+        <layout class="org.apache.log4j.PatternLayout"> 
+            <param name="ConversionPattern" value="%d{ABSOLUTE} %p %c %m%n"/> 
+        </layout> 
+    </appender>
+
+    <root>
+        <priority value ="info" />
+        <appender-ref ref="ConsoleAppender"/>
+        <appender-ref ref="Dao" /> 
+    </root>
+  <!--[ Log cho bo loc ATTT_121123    -->
+    <appender name="securityLog" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="file" value="..\log\securityLog.log" />
+        <param name="append" value="true" />
+        <param name="datePattern" value="'.'yyyy-MM-dd" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="Time: %d{ISO8601} %-5p %n %m %n"/>
+        </layout>
+    </appender>
+    <logger name="webframework.security.filter">
+        <level value="info"/>
+        <appender-ref ref="securityLog"/>
+    </logger>
+<!--]-->
+
+</log4j:configuration>
